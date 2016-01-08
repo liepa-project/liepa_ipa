@@ -1,0 +1,867 @@
+﻿phrase;command;cmd-arg
+išvalyk asmeninius duomenis;cmd-browser-clear-data;
+ieškok teksto;cmd-text-search;
+patvirtinu;cmd-dlg-confirm;
+sutinku;cmd-dlg-confirm;
+horoskopai;cmd-custom-page-theme-n;14
+padidink;cmd-zoom-in;
+padidink mastelį;cmd-zoom-in;
+padidink vaizdą;cmd-zoom-in;
+eik kairėn;cmd-move-left-n;1
+eik kairėn aštuonis kartus;cmd-move-left-n;8
+eik kairėn devynis kartus;cmd-move-left-n;9
+eik kairėn dešimt kartų;cmd-move-left-n;10
+eik kairėn du kartus;cmd-move-left-n;2
+eik kairėn keturis kartus;cmd-move-left-n;4
+eik kairėn penkis kartus;cmd-move-left-n;5
+eik kairėn septynis kartus;cmd-move-left-n;7
+eik kairėn tris kartus;cmd-move-left-n;3
+eik kairėn šešis kartus;cmd-move-left-n;6
+eik į kairę;cmd-move-left-n;1
+eik į kairę aštuonis kartus;cmd-move-left-n;8
+eik į kairę devynis kartus;cmd-move-left-n;9
+eik į kairę dešimt kartų;cmd-move-left-n;10
+eik į kairę du kartus;cmd-move-left-n;2
+eik į kairę keturis kartus;cmd-move-left-n;4
+eik į kairę penkis kartus;cmd-move-left-n;5
+eik į kairę septynis kartus;cmd-move-left-n;7
+eik į kairę tris kartus;cmd-move-left-n;3
+eik į kairę šešis kartus;cmd-move-left-n;6
+kairėn;cmd-move-left-n;1
+kairėn aštuonis kartus;cmd-move-left-n;8
+kairėn devynis kartus;cmd-move-left-n;9
+kairėn dešimt kartų;cmd-move-left-n;10
+kairėn du kartus;cmd-move-left-n;2
+kairėn keturis kartus;cmd-move-left-n;4
+kairėn penkis kartus;cmd-move-left-n;5
+kairėn septynis kartus;cmd-move-left-n;7
+kairėn tris kartus;cmd-move-left-n;3
+kairėn šešis kartus;cmd-move-left-n;6
+slink kairėn;cmd-move-left-n;1
+slink kairėn aštuonis kartus;cmd-move-left-n;8
+slink kairėn devynis kartus;cmd-move-left-n;9
+slink kairėn dešimt kartų;cmd-move-left-n;10
+slink kairėn du kartus;cmd-move-left-n;2
+slink kairėn keturis kartus;cmd-move-left-n;4
+slink kairėn penkis kartus;cmd-move-left-n;5
+slink kairėn septynis kartus;cmd-move-left-n;7
+slink kairėn tris kartus;cmd-move-left-n;3
+slink kairėn šešis kartus;cmd-move-left-n;6
+slink į kairę;cmd-move-left-n;1
+slink į kairę aštuonis kartus;cmd-move-left-n;8
+slink į kairę devynis kartus;cmd-move-left-n;9
+slink į kairę dešimt kartų;cmd-move-left-n;10
+slink į kairę du kartus;cmd-move-left-n;2
+slink į kairę keturis kartus;cmd-move-left-n;4
+slink į kairę penkis kartus;cmd-move-left-n;5
+slink į kairę septynis kartus;cmd-move-left-n;7
+slink į kairę tris kartus;cmd-move-left-n;3
+slink į kairę šešis kartus;cmd-move-left-n;6
+į kairę;cmd-move-left-n;1
+į kairę aštuonis kartus;cmd-move-left-n;8
+į kairę devynis kartus;cmd-move-left-n;9
+į kairę dešimt kartų;cmd-move-left-n;10
+į kairę du kartus;cmd-move-left-n;2
+į kairę keturis kartus;cmd-move-left-n;4
+į kairę penkis kartus;cmd-move-left-n;5
+į kairę septynis kartus;cmd-move-left-n;7
+į kairę tris kartus;cmd-move-left-n;3
+į kairę šešis kartus;cmd-move-left-n;6
+teatras;cmd-custom-page-theme-n;12
+atsiuntimų žurnalas;cmd-down-manager;
+atverk atsiuntimų žurnalą;cmd-down-manager;
+pereik į pabaigą;cmd-move-end;
+į pabaigą;cmd-move-end;
+eik žemyn;cmd-move-down-n;1
+eik žemyn aštuonis kartus;cmd-move-down-n;8
+eik žemyn devynis kartus;cmd-move-down-n;9
+eik žemyn dešimt kartų;cmd-move-down-n;10
+eik žemyn du kartus;cmd-move-down-n;2
+eik žemyn keturis kartus;cmd-move-down-n;4
+eik žemyn penkis kartus;cmd-move-down-n;5
+eik žemyn septynis kartus;cmd-move-down-n;7
+eik žemyn tris kartus;cmd-move-down-n;3
+eik žemyn šešis kartus;cmd-move-down-n;6
+slink žemyn;cmd-move-down-n;1
+slink žemyn aštuonis kartus;cmd-move-down-n;8
+slink žemyn devynis kartus;cmd-move-down-n;9
+slink žemyn dešimt kartų;cmd-move-down-n;10
+slink žemyn du kartus;cmd-move-down-n;2
+slink žemyn keturis kartus;cmd-move-down-n;4
+slink žemyn penkis kartus;cmd-move-down-n;5
+slink žemyn septynis kartus;cmd-move-down-n;7
+slink žemyn tris kartus;cmd-move-down-n;3
+slink žemyn šešis kartus;cmd-move-down-n;6
+žemyn;cmd-move-down-n;1
+žemyn aštuonis kartus;cmd-move-down-n;8
+žemyn devynis kartus;cmd-move-down-n;9
+žemyn dešimt kartų;cmd-move-down-n;10
+žemyn du kartus;cmd-move-down-n;2
+žemyn keturis kartus;cmd-move-down-n;4
+žemyn penkis kartus;cmd-move-down-n;5
+žemyn septynis kartus;cmd-move-down-n;7
+žemyn tris kartus;cmd-move-down-n;3
+žemyn šešis kartus;cmd-move-down-n;6
+pažymėk viską;cmd-select-all;
+pašalink;cmd-delete;
+atstatyk;cmd-redo;
+atstatyk veiksmą;cmd-redo;
+grąžink;cmd-redo;
+grąžink veiksmą;cmd-redo;
+televizija;cmd-custom-page-theme-n;8
+ankstesnis fragmentas;cmd-text-search-prev;
+ankstesnis teksto fragmentas;cmd-text-search-prev;
+ieškok ankstesnio;cmd-text-search-prev;
+adresas;cmd-location-bar;
+adreso juosta;cmd-location-bar;
+pereik į adreso juostą;cmd-location-bar;
+į adreso juostą;cmd-location-bar;
+atšauk;cmd-undo;
+atšauk veiksmą;cmd-undo;
+kopijuok;cmd-copy;
+kopijuok tekstą;cmd-copy;
+galinė kortelė;cmd-tab-last;
+pereik į galinę kortelę;cmd-tab-last;
+į galinę kortelę;cmd-tab-last;
+ankstesnė kortelė;cmd-tab-prev;
+pereik į ankstesnę kortelę;cmd-tab-prev;
+į ankstesnę kortelę;cmd-tab-prev;
+orai;cmd-custom-page-theme-n;1
+grąžink kortelę;cmd-tab-close-undo;
+išvalyk naršymo žurnalą;cmd-hist-clear-all;
+išvalyk žurnalą;cmd-hist-clear-all;
+adresynas;cmd-bm-manager;
+atverk adresyną;cmd-bm-manager;
+sportas;cmd-custom-page-theme-n;3
+sužymėk ekrane matomus saitus;cmd-links-mark-visible;
+sužymėk matomus saitus;cmd-links-mark-visible;
+knygos;cmd-custom-page-theme-n;10
+atverk naršymo žurnalą;cmd-hist-manager;
+atverk žurnalą;cmd-hist-manager;
+naršymo žurnalas;cmd-hist-manager;
+užverk langą;cmd-window-close;
+ieškok kito;cmd-text-search-next;
+tolesnis fragmentas;cmd-text-search-next;
+tolesnis teksto fragmentas;cmd-text-search-next;
+sveikata;cmd-custom-page-theme-n;13
+renginiai;cmd-custom-page-theme-n;5
+ankstesnis puslapis;cmd-move-page-up;
+atverk saitą aštuoni;cmd-link-open-n;8
+atverk saitą aštuoni aštuoni;cmd-link-open-n;88
+atverk saitą aštuoni devyni;cmd-link-open-n;89
+atverk saitą aštuoni du;cmd-link-open-n;82
+atverk saitą aštuoni keturi;cmd-link-open-n;84
+atverk saitą aštuoni nulis;cmd-link-open-n;80
+atverk saitą aštuoni penki;cmd-link-open-n;85
+atverk saitą aštuoni septyni;cmd-link-open-n;87
+atverk saitą aštuoni trys;cmd-link-open-n;83
+atverk saitą aštuoni vienas;cmd-link-open-n;81
+atverk saitą aštuoni šeši;cmd-link-open-n;86
+atverk saitą devyni;cmd-link-open-n;9
+atverk saitą devyni aštuoni;cmd-link-open-n;98
+atverk saitą devyni devyni;cmd-link-open-n;99
+atverk saitą devyni du;cmd-link-open-n;92
+atverk saitą devyni keturi;cmd-link-open-n;94
+atverk saitą devyni nulis;cmd-link-open-n;90
+atverk saitą devyni penki;cmd-link-open-n;95
+atverk saitą devyni septyni;cmd-link-open-n;97
+atverk saitą devyni trys;cmd-link-open-n;93
+atverk saitą devyni vienas;cmd-link-open-n;91
+atverk saitą devyni šeši;cmd-link-open-n;96
+atverk saitą du;cmd-link-open-n;2
+atverk saitą du aštuoni;cmd-link-open-n;28
+atverk saitą du devyni;cmd-link-open-n;29
+atverk saitą du du;cmd-link-open-n;22
+atverk saitą du keturi;cmd-link-open-n;24
+atverk saitą du nulis;cmd-link-open-n;20
+atverk saitą du penki;cmd-link-open-n;25
+atverk saitą du septyni;cmd-link-open-n;27
+atverk saitą du trys;cmd-link-open-n;23
+atverk saitą du vienas;cmd-link-open-n;21
+atverk saitą du šeši;cmd-link-open-n;26
+atverk saitą keturi;cmd-link-open-n;4
+atverk saitą keturi aštuoni;cmd-link-open-n;48
+atverk saitą keturi devyni;cmd-link-open-n;49
+atverk saitą keturi du;cmd-link-open-n;42
+atverk saitą keturi keturi;cmd-link-open-n;44
+atverk saitą keturi nulis;cmd-link-open-n;40
+atverk saitą keturi penki;cmd-link-open-n;45
+atverk saitą keturi septyni;cmd-link-open-n;47
+atverk saitą keturi trys;cmd-link-open-n;43
+atverk saitą keturi vienas;cmd-link-open-n;41
+atverk saitą keturi šeši;cmd-link-open-n;46
+atverk saitą penki;cmd-link-open-n;5
+atverk saitą penki aštuoni;cmd-link-open-n;58
+atverk saitą penki devyni;cmd-link-open-n;59
+atverk saitą penki du;cmd-link-open-n;52
+atverk saitą penki keturi;cmd-link-open-n;54
+atverk saitą penki nulis;cmd-link-open-n;50
+atverk saitą penki penki;cmd-link-open-n;55
+atverk saitą penki septyni;cmd-link-open-n;57
+atverk saitą penki trys;cmd-link-open-n;53
+atverk saitą penki vienas;cmd-link-open-n;51
+atverk saitą penki šeši;cmd-link-open-n;56
+atverk saitą septyni;cmd-link-open-n;7
+atverk saitą septyni aštuoni;cmd-link-open-n;78
+atverk saitą septyni devyni;cmd-link-open-n;79
+atverk saitą septyni du;cmd-link-open-n;72
+atverk saitą septyni keturi;cmd-link-open-n;74
+atverk saitą septyni nulis;cmd-link-open-n;70
+atverk saitą septyni penki;cmd-link-open-n;75
+atverk saitą septyni septyni;cmd-link-open-n;77
+atverk saitą septyni trys;cmd-link-open-n;73
+atverk saitą septyni vienas;cmd-link-open-n;71
+atverk saitą septyni šeši;cmd-link-open-n;76
+atverk saitą trys;cmd-link-open-n;3
+atverk saitą trys aštuoni;cmd-link-open-n;38
+atverk saitą trys devyni;cmd-link-open-n;39
+atverk saitą trys du;cmd-link-open-n;32
+atverk saitą trys keturi;cmd-link-open-n;34
+atverk saitą trys nulis;cmd-link-open-n;30
+atverk saitą trys penki;cmd-link-open-n;35
+atverk saitą trys septyni;cmd-link-open-n;37
+atverk saitą trys trys;cmd-link-open-n;33
+atverk saitą trys vienas;cmd-link-open-n;31
+atverk saitą trys šeši;cmd-link-open-n;36
+atverk saitą vienas;cmd-link-open-n;1
+atverk saitą vienas aštuoni;cmd-link-open-n;18
+atverk saitą vienas devyni;cmd-link-open-n;19
+atverk saitą vienas du;cmd-link-open-n;12
+atverk saitą vienas keturi;cmd-link-open-n;14
+atverk saitą vienas nulis;cmd-link-open-n;10
+atverk saitą vienas penki;cmd-link-open-n;15
+atverk saitą vienas septyni;cmd-link-open-n;17
+atverk saitą vienas trys;cmd-link-open-n;13
+atverk saitą vienas vienas;cmd-link-open-n;11
+atverk saitą vienas šeši;cmd-link-open-n;16
+atverk saitą šeši;cmd-link-open-n;6
+atverk saitą šeši aštuoni;cmd-link-open-n;68
+atverk saitą šeši devyni;cmd-link-open-n;69
+atverk saitą šeši du;cmd-link-open-n;62
+atverk saitą šeši keturi;cmd-link-open-n;64
+atverk saitą šeši nulis;cmd-link-open-n;60
+atverk saitą šeši penki;cmd-link-open-n;65
+atverk saitą šeši septyni;cmd-link-open-n;67
+atverk saitą šeši trys;cmd-link-open-n;63
+atverk saitą šeši vienas;cmd-link-open-n;61
+atverk saitą šeši šeši;cmd-link-open-n;66
+tolesnis puslapis;cmd-move-page-down;
+dešinėn;cmd-move-right-n;1
+dešinėn aštuonis kartus;cmd-move-right-n;8
+dešinėn devynis kartus;cmd-move-right-n;9
+dešinėn dešimt kartų;cmd-move-right-n;10
+dešinėn du kartus;cmd-move-right-n;2
+dešinėn keturis kartus;cmd-move-right-n;4
+dešinėn penkis kartus;cmd-move-right-n;5
+dešinėn septynis kartus;cmd-move-right-n;7
+dešinėn tris kartus;cmd-move-right-n;3
+dešinėn šešis kartus;cmd-move-right-n;6
+eik dešinėn;cmd-move-right-n;1
+eik dešinėn aštuonis kartus;cmd-move-right-n;8
+eik dešinėn devynis kartus;cmd-move-right-n;9
+eik dešinėn dešimt kartų;cmd-move-right-n;10
+eik dešinėn du kartus;cmd-move-right-n;2
+eik dešinėn keturis kartus;cmd-move-right-n;4
+eik dešinėn penkis kartus;cmd-move-right-n;5
+eik dešinėn septynis kartus;cmd-move-right-n;7
+eik dešinėn tris kartus;cmd-move-right-n;3
+eik dešinėn šešis kartus;cmd-move-right-n;6
+eik į dešinę;cmd-move-right-n;1
+eik į dešinę aštuonis kartus;cmd-move-right-n;8
+eik į dešinę devynis kartus;cmd-move-right-n;9
+eik į dešinę dešimt kartų;cmd-move-right-n;10
+eik į dešinę du kartus;cmd-move-right-n;2
+eik į dešinę keturis kartus;cmd-move-right-n;4
+eik į dešinę penkis kartus;cmd-move-right-n;5
+eik į dešinę septynis kartus;cmd-move-right-n;7
+eik į dešinę tris kartus;cmd-move-right-n;3
+eik į dešinę šešis kartus;cmd-move-right-n;6
+slink dešinėn;cmd-move-right-n;1
+slink dešinėn aštuonis kartus;cmd-move-right-n;8
+slink dešinėn devynis kartus;cmd-move-right-n;9
+slink dešinėn dešimt kartų;cmd-move-right-n;10
+slink dešinėn du kartus;cmd-move-right-n;2
+slink dešinėn keturis kartus;cmd-move-right-n;4
+slink dešinėn penkis kartus;cmd-move-right-n;5
+slink dešinėn septynis kartus;cmd-move-right-n;7
+slink dešinėn tris kartus;cmd-move-right-n;3
+slink dešinėn šešis kartus;cmd-move-right-n;6
+slink į dešinę;cmd-move-right-n;1
+slink į dešinę aštuonis kartus;cmd-move-right-n;8
+slink į dešinę devynis kartus;cmd-move-right-n;9
+slink į dešinę dešimt kartų;cmd-move-right-n;10
+slink į dešinę du kartus;cmd-move-right-n;2
+slink į dešinę keturis kartus;cmd-move-right-n;4
+slink į dešinę penkis kartus;cmd-move-right-n;5
+slink į dešinę septynis kartus;cmd-move-right-n;7
+slink į dešinę tris kartus;cmd-move-right-n;3
+slink į dešinę šešis kartus;cmd-move-right-n;6
+į dešinę;cmd-move-right-n;1
+į dešinę aštuonis kartus;cmd-move-right-n;8
+į dešinę devynis kartus;cmd-move-right-n;9
+į dešinę dešimt kartų;cmd-move-right-n;10
+į dešinę du kartus;cmd-move-right-n;2
+į dešinę keturis kartus;cmd-move-right-n;4
+į dešinę penkis kartus;cmd-move-right-n;5
+į dešinę septynis kartus;cmd-move-right-n;7
+į dešinę tris kartus;cmd-move-right-n;3
+į dešinę šešis kartus;cmd-move-right-n;6
+pereik į pradžią;cmd-move-home;
+į pradžią;cmd-move-home;
+atverk paieškos tinklalapį;cmd-custom-page-theme-n;16
+paieška;cmd-custom-page-theme-n;16
+paieškos tinklalapis;cmd-custom-page-theme-n;16
+atverk kortelę;cmd-tab-new;
+atverk naują kortelę;cmd-tab-new;
+nauja kortelė;cmd-tab-new;
+atsisakyk;cmd-dlg-cancel;
+nutrauk;cmd-dlg-cancel;
+muzika;cmd-custom-page-theme-n;4
+antra kortelė;cmd-tab-nth;2
+aštunta kortelė;cmd-tab-nth;8
+devinta kortelė;cmd-tab-nth;9
+ketvirta kortelė;cmd-tab-nth;4
+penkta kortelė;cmd-tab-nth;5
+pereik į antrą kortelę;cmd-tab-nth;2
+pereik į aštuntą kortelę;cmd-tab-nth;8
+pereik į devintą kortelę;cmd-tab-nth;9
+pereik į ketvirtą kortelę;cmd-tab-nth;4
+pereik į penktą kortelę;cmd-tab-nth;5
+pereik į pirmą kortelę;cmd-tab-nth;1
+pereik į septintą kortelę;cmd-tab-nth;7
+pereik į trečią kortelę;cmd-tab-nth;3
+pereik į šeštą kortelę;cmd-tab-nth;6
+pirma kortelė;cmd-tab-nth;1
+septinta kortelė;cmd-tab-nth;7
+trečia kortelė;cmd-tab-nth;3
+į antrą kortelę;cmd-tab-nth;2
+į aštuntą kortelę;cmd-tab-nth;8
+į devintą kortelę;cmd-tab-nth;9
+į ketvirtą kortelę;cmd-tab-nth;4
+į penktą kortelę;cmd-tab-nth;5
+į pirmą kortelę;cmd-tab-nth;1
+į septintą kortelę;cmd-tab-nth;7
+į trečią kortelę;cmd-tab-nth;3
+į šeštą kortelę;cmd-tab-nth;6
+šešta kortelė;cmd-tab-nth;6
+spausdink;cmd-print;
+spausdink tinklalapį;cmd-print;
+pereik į tolesnę kortelę;cmd-tab-next;
+tolesnė kortelė;cmd-tab-next;
+į tolesnę kortelę;cmd-tab-next;
+rodyk visame ekrane;cmd-full-screen;
+visas ekranas;cmd-full-screen;
+kitas elementas;cmd-move-next-item-n;1
+kitas laukas;cmd-move-next-item-n;1
+pereik pirmyn;cmd-move-next-item-n;1
+pereik pirmyn aštuonis kartus;cmd-move-next-item-n;8
+pereik pirmyn devynis kartus;cmd-move-next-item-n;9
+pereik pirmyn dešimt kartų;cmd-move-next-item-n;10
+pereik pirmyn du kartus;cmd-move-next-item-n;2
+pereik pirmyn keturis kartus;cmd-move-next-item-n;4
+pereik pirmyn penkis kartus;cmd-move-next-item-n;5
+pereik pirmyn septynis kartus;cmd-move-next-item-n;7
+pereik pirmyn tris kartus;cmd-move-next-item-n;3
+pereik pirmyn šešis kartus;cmd-move-next-item-n;6
+pereik į kitą elementą;cmd-move-next-item-n;1
+pereik į kitą lauką;cmd-move-next-item-n;1
+pereik į tolesnį elementą;cmd-move-next-item-n;1
+pereik į tolesnį lauką;cmd-move-next-item-n;1
+tolesnis elementas;cmd-move-next-item-n;1
+tolesnis laukas;cmd-move-next-item-n;1
+atverk pradžios tinklalapį;cmd-homepage;
+pradžios tinklalapis;cmd-homepage;
+grįžk iš viso ekrano;cmd-full-screen-off;
+išjunk visą ekraną;cmd-full-screen-off;
+normalus ekranas;cmd-full-screen-off;
+įprastas ekranas;cmd-full-screen-off;
+stabdyk;cmd-stop;
+stabdyk atsiuntimą;cmd-stop;
+stop;cmd-stop;
+tinklalapiu pirmyn;cmd-page-forward;
+tinklalapiu toliau;cmd-page-forward;
+tolesnis tinklalapis;cmd-page-forward;
+vėlesnis tinklalapis;cmd-page-forward;
+mano tinklalapis;cmd-custom-page-theme-n;11
+ankstenis elementas;cmd-move-prev-item-n;1
+ankstenis laukas;cmd-move-prev-item-n;1
+pereik atgal;cmd-move-prev-item-n;1
+pereik atgal aštuonis kartus;cmd-move-prev-item-n;8
+pereik atgal devynis kartus;cmd-move-prev-item-n;9
+pereik atgal dešimt kartų;cmd-move-prev-item-n;10
+pereik atgal du kartus;cmd-move-prev-item-n;2
+pereik atgal keturis kartus;cmd-move-prev-item-n;4
+pereik atgal penkis kartus;cmd-move-prev-item-n;5
+pereik atgal septynis kartus;cmd-move-prev-item-n;7
+pereik atgal tris kartus;cmd-move-prev-item-n;3
+pereik atgal šešis kartus;cmd-move-prev-item-n;6
+pereik į ankstesnį elementą;cmd-move-prev-item-n;1
+pereik į ankstesnį lauką;cmd-move-prev-item-n;1
+atverk langą;cmd-window-new;
+atverk naują langą;cmd-window-new;
+naujas langas;cmd-window-new;
+atsiųsk iš naujo;cmd-reload;
+atsiųsk tinklalapį iš naujo;cmd-reload;
+perkrauk tinklalapį;cmd-reload;
+ankstesnis tinklalapis;cmd-page-back;
+grįžk atgal;cmd-page-back;
+tinklalapiu atgal;cmd-page-back;
+aukštyn;cmd-move-up-n;1
+aukštyn aštuonis kartus;cmd-move-up-n;8
+aukštyn devynis kartus;cmd-move-up-n;9
+aukštyn dešimt kartų;cmd-move-up-n;10
+aukštyn du kartus;cmd-move-up-n;2
+aukštyn keturis kartus;cmd-move-up-n;4
+aukštyn penkis kartus;cmd-move-up-n;5
+aukštyn septynis kartus;cmd-move-up-n;7
+aukštyn tris kartus;cmd-move-up-n;3
+aukštyn šešis kartus;cmd-move-up-n;6
+eik aukštyn;cmd-move-up-n;1
+eik aukštyn aštuonis kartus;cmd-move-up-n;8
+eik aukštyn devynis kartus;cmd-move-up-n;9
+eik aukštyn dešimt kartų;cmd-move-up-n;10
+eik aukštyn du kartus;cmd-move-up-n;2
+eik aukštyn keturis kartus;cmd-move-up-n;4
+eik aukštyn penkis kartus;cmd-move-up-n;5
+eik aukštyn septynis kartus;cmd-move-up-n;7
+eik aukštyn tris kartus;cmd-move-up-n;3
+eik aukštyn šešis kartus;cmd-move-up-n;6
+slink aukštyn;cmd-move-up-n;1
+slink aukštyn aštuonis kartus;cmd-move-up-n;8
+slink aukštyn devynis kartus;cmd-move-up-n;9
+slink aukštyn dešimt kartų;cmd-move-up-n;10
+slink aukštyn du kartus;cmd-move-up-n;2
+slink aukštyn keturis kartus;cmd-move-up-n;4
+slink aukštyn penkis kartus;cmd-move-up-n;5
+slink aukštyn septynis kartus;cmd-move-up-n;7
+slink aukštyn tris kartus;cmd-move-up-n;3
+slink aukštyn šešis kartus;cmd-move-up-n;6
+įdėk;cmd-paste;
+įdėk tekstą;cmd-paste;
+įklijuok;cmd-paste;
+įklijuok tekstą;cmd-paste;
+kontekstinis meniu;cmd-menu-context;
+vietinis meniu;cmd-menu-context;
+atverk saitą aštuoni aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;88
+atverk saitą aštuoni aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;88
+atverk saitą aštuoni devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;89
+atverk saitą aštuoni devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;89
+atverk saitą aštuoni du kitoje kortelėje;cmd-link-open-in-new-tab-n;82
+atverk saitą aštuoni du naujoje kortelėje;cmd-link-open-in-new-tab-n;82
+atverk saitą aštuoni keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;84
+atverk saitą aštuoni keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;84
+atverk saitą aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;8
+atverk saitą aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;8
+atverk saitą aštuoni nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;80
+atverk saitą aštuoni nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;80
+atverk saitą aštuoni penki kitoje kortelėje;cmd-link-open-in-new-tab-n;85
+atverk saitą aštuoni penki naujoje kortelėje;cmd-link-open-in-new-tab-n;85
+atverk saitą aštuoni septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;87
+atverk saitą aštuoni septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;87
+atverk saitą aštuoni trys kitoje kortelėje;cmd-link-open-in-new-tab-n;83
+atverk saitą aštuoni trys naujoje kortelėje;cmd-link-open-in-new-tab-n;83
+atverk saitą aštuoni vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;81
+atverk saitą aštuoni vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;81
+atverk saitą aštuoni šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;86
+atverk saitą aštuoni šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;86
+atverk saitą devyni aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;98
+atverk saitą devyni aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;98
+atverk saitą devyni devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;99
+atverk saitą devyni devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;99
+atverk saitą devyni du kitoje kortelėje;cmd-link-open-in-new-tab-n;92
+atverk saitą devyni du naujoje kortelėje;cmd-link-open-in-new-tab-n;92
+atverk saitą devyni keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;94
+atverk saitą devyni keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;94
+atverk saitą devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;9
+atverk saitą devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;9
+atverk saitą devyni nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;90
+atverk saitą devyni nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;90
+atverk saitą devyni penki kitoje kortelėje;cmd-link-open-in-new-tab-n;95
+atverk saitą devyni penki naujoje kortelėje;cmd-link-open-in-new-tab-n;95
+atverk saitą devyni septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;97
+atverk saitą devyni septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;97
+atverk saitą devyni trys kitoje kortelėje;cmd-link-open-in-new-tab-n;93
+atverk saitą devyni trys naujoje kortelėje;cmd-link-open-in-new-tab-n;93
+atverk saitą devyni vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;91
+atverk saitą devyni vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;91
+atverk saitą devyni šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;96
+atverk saitą devyni šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;96
+atverk saitą du aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;28
+atverk saitą du aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;28
+atverk saitą du devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;29
+atverk saitą du devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;29
+atverk saitą du du kitoje kortelėje;cmd-link-open-in-new-tab-n;22
+atverk saitą du du naujoje kortelėje;cmd-link-open-in-new-tab-n;22
+atverk saitą du keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;24
+atverk saitą du keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;24
+atverk saitą du kitoje kortelėje;cmd-link-open-in-new-tab-n;2
+atverk saitą du naujoje kortelėje;cmd-link-open-in-new-tab-n;2
+atverk saitą du nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;20
+atverk saitą du nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;20
+atverk saitą du penki kitoje kortelėje;cmd-link-open-in-new-tab-n;25
+atverk saitą du penki naujoje kortelėje;cmd-link-open-in-new-tab-n;25
+atverk saitą du septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;27
+atverk saitą du septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;27
+atverk saitą du trys kitoje kortelėje;cmd-link-open-in-new-tab-n;23
+atverk saitą du trys naujoje kortelėje;cmd-link-open-in-new-tab-n;23
+atverk saitą du vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;21
+atverk saitą du vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;21
+atverk saitą du šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;26
+atverk saitą du šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;26
+atverk saitą keturi aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;48
+atverk saitą keturi aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;48
+atverk saitą keturi devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;49
+atverk saitą keturi devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;49
+atverk saitą keturi du kitoje kortelėje;cmd-link-open-in-new-tab-n;42
+atverk saitą keturi du naujoje kortelėje;cmd-link-open-in-new-tab-n;42
+atverk saitą keturi keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;44
+atverk saitą keturi keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;44
+atverk saitą keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;4
+atverk saitą keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;4
+atverk saitą keturi nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;40
+atverk saitą keturi nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;40
+atverk saitą keturi penki kitoje kortelėje;cmd-link-open-in-new-tab-n;45
+atverk saitą keturi penki naujoje kortelėje;cmd-link-open-in-new-tab-n;45
+atverk saitą keturi septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;47
+atverk saitą keturi septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;47
+atverk saitą keturi trys kitoje kortelėje;cmd-link-open-in-new-tab-n;43
+atverk saitą keturi trys naujoje kortelėje;cmd-link-open-in-new-tab-n;43
+atverk saitą keturi vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;41
+atverk saitą keturi vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;41
+atverk saitą keturi šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;46
+atverk saitą keturi šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;46
+atverk saitą penki aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;58
+atverk saitą penki aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;58
+atverk saitą penki devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;59
+atverk saitą penki devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;59
+atverk saitą penki du kitoje kortelėje;cmd-link-open-in-new-tab-n;52
+atverk saitą penki du naujoje kortelėje;cmd-link-open-in-new-tab-n;52
+atverk saitą penki keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;54
+atverk saitą penki keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;54
+atverk saitą penki kitoje kortelėje;cmd-link-open-in-new-tab-n;5
+atverk saitą penki naujoje kortelėje;cmd-link-open-in-new-tab-n;5
+atverk saitą penki nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;50
+atverk saitą penki nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;50
+atverk saitą penki penki kitoje kortelėje;cmd-link-open-in-new-tab-n;55
+atverk saitą penki penki naujoje kortelėje;cmd-link-open-in-new-tab-n;55
+atverk saitą penki septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;57
+atverk saitą penki septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;57
+atverk saitą penki trys kitoje kortelėje;cmd-link-open-in-new-tab-n;53
+atverk saitą penki trys naujoje kortelėje;cmd-link-open-in-new-tab-n;53
+atverk saitą penki vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;51
+atverk saitą penki vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;51
+atverk saitą penki šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;56
+atverk saitą penki šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;56
+atverk saitą septyni aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;78
+atverk saitą septyni aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;78
+atverk saitą septyni devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;79
+atverk saitą septyni devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;79
+atverk saitą septyni du kitoje kortelėje;cmd-link-open-in-new-tab-n;72
+atverk saitą septyni du naujoje kortelėje;cmd-link-open-in-new-tab-n;72
+atverk saitą septyni keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;74
+atverk saitą septyni keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;74
+atverk saitą septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;7
+atverk saitą septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;7
+atverk saitą septyni nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;70
+atverk saitą septyni nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;70
+atverk saitą septyni penki kitoje kortelėje;cmd-link-open-in-new-tab-n;75
+atverk saitą septyni penki naujoje kortelėje;cmd-link-open-in-new-tab-n;75
+atverk saitą septyni septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;77
+atverk saitą septyni septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;77
+atverk saitą septyni trys kitoje kortelėje;cmd-link-open-in-new-tab-n;73
+atverk saitą septyni trys naujoje kortelėje;cmd-link-open-in-new-tab-n;73
+atverk saitą septyni vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;71
+atverk saitą septyni vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;71
+atverk saitą septyni šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;76
+atverk saitą septyni šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;76
+atverk saitą trys aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;38
+atverk saitą trys aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;38
+atverk saitą trys devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;39
+atverk saitą trys devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;39
+atverk saitą trys du kitoje kortelėje;cmd-link-open-in-new-tab-n;32
+atverk saitą trys du naujoje kortelėje;cmd-link-open-in-new-tab-n;32
+atverk saitą trys keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;34
+atverk saitą trys keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;34
+atverk saitą trys kitoje kortelėje;cmd-link-open-in-new-tab-n;3
+atverk saitą trys naujoje kortelėje;cmd-link-open-in-new-tab-n;3
+atverk saitą trys nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;30
+atverk saitą trys nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;30
+atverk saitą trys penki kitoje kortelėje;cmd-link-open-in-new-tab-n;35
+atverk saitą trys penki naujoje kortelėje;cmd-link-open-in-new-tab-n;35
+atverk saitą trys septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;37
+atverk saitą trys septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;37
+atverk saitą trys trys kitoje kortelėje;cmd-link-open-in-new-tab-n;33
+atverk saitą trys trys naujoje kortelėje;cmd-link-open-in-new-tab-n;33
+atverk saitą trys vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;31
+atverk saitą trys vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;31
+atverk saitą trys šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;36
+atverk saitą trys šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;36
+atverk saitą vienas aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;18
+atverk saitą vienas aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;18
+atverk saitą vienas devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;19
+atverk saitą vienas devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;19
+atverk saitą vienas du kitoje kortelėje;cmd-link-open-in-new-tab-n;12
+atverk saitą vienas du naujoje kortelėje;cmd-link-open-in-new-tab-n;12
+atverk saitą vienas keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;14
+atverk saitą vienas keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;14
+atverk saitą vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;1
+atverk saitą vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;1
+atverk saitą vienas nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;10
+atverk saitą vienas nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;10
+atverk saitą vienas penki kitoje kortelėje;cmd-link-open-in-new-tab-n;15
+atverk saitą vienas penki naujoje kortelėje;cmd-link-open-in-new-tab-n;15
+atverk saitą vienas septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;17
+atverk saitą vienas septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;17
+atverk saitą vienas trys kitoje kortelėje;cmd-link-open-in-new-tab-n;13
+atverk saitą vienas trys naujoje kortelėje;cmd-link-open-in-new-tab-n;13
+atverk saitą vienas vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;11
+atverk saitą vienas vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;11
+atverk saitą vienas šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;16
+atverk saitą vienas šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;16
+atverk saitą šeši aštuoni kitoje kortelėje;cmd-link-open-in-new-tab-n;68
+atverk saitą šeši aštuoni naujoje kortelėje;cmd-link-open-in-new-tab-n;68
+atverk saitą šeši devyni kitoje kortelėje;cmd-link-open-in-new-tab-n;69
+atverk saitą šeši devyni naujoje kortelėje;cmd-link-open-in-new-tab-n;69
+atverk saitą šeši du kitoje kortelėje;cmd-link-open-in-new-tab-n;62
+atverk saitą šeši du naujoje kortelėje;cmd-link-open-in-new-tab-n;62
+atverk saitą šeši keturi kitoje kortelėje;cmd-link-open-in-new-tab-n;64
+atverk saitą šeši keturi naujoje kortelėje;cmd-link-open-in-new-tab-n;64
+atverk saitą šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;6
+atverk saitą šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;6
+atverk saitą šeši nulis kitoje kortelėje;cmd-link-open-in-new-tab-n;60
+atverk saitą šeši nulis naujoje kortelėje;cmd-link-open-in-new-tab-n;60
+atverk saitą šeši penki kitoje kortelėje;cmd-link-open-in-new-tab-n;65
+atverk saitą šeši penki naujoje kortelėje;cmd-link-open-in-new-tab-n;65
+atverk saitą šeši septyni kitoje kortelėje;cmd-link-open-in-new-tab-n;67
+atverk saitą šeši septyni naujoje kortelėje;cmd-link-open-in-new-tab-n;67
+atverk saitą šeši trys kitoje kortelėje;cmd-link-open-in-new-tab-n;63
+atverk saitą šeši trys naujoje kortelėje;cmd-link-open-in-new-tab-n;63
+atverk saitą šeši vienas kitoje kortelėje;cmd-link-open-in-new-tab-n;61
+atverk saitą šeši vienas naujoje kortelėje;cmd-link-open-in-new-tab-n;61
+atverk saitą šeši šeši kitoje kortelėje;cmd-link-open-in-new-tab-n;66
+atverk saitą šeši šeši naujoje kortelėje;cmd-link-open-in-new-tab-n;66
+filmai;cmd-custom-page-theme-n;9
+mokslas;cmd-custom-page-theme-n;7
+užverk kitas korteles;cmd-tab-close-all-other;
+užverk kortelę;cmd-tab-close;
+atkurk mastelį;cmd-zoom-orig;
+originalus mastelis;cmd-zoom-orig;
+originalus vaizdas;cmd-zoom-orig;
+naujienos;cmd-custom-page-theme-n;2
+sumažink;cmd-zoom-out;
+sumažink mastelį;cmd-zoom-out;
+sumažink vaizdą;cmd-zoom-out;
+iškirpk;cmd-cut;
+iškirpk tekstą;cmd-cut;
+receptai;cmd-custom-page-theme-n;6
+pereik į pradžios kortelę;cmd-tab-first;
+pradžios kortelė;cmd-tab-first;
+į pradžios kortelę;cmd-tab-first;
+įrašyk tinklalapį;cmd-save-page;
+įrašyk adresą;cmd-bm-add-page;
+įrašyk tinklalapio adresą;cmd-bm-add-page;
+įrašyk į adresyną;cmd-bm-add-page;
+įtrauk į adresyną;cmd-bm-add-page;
+išjunk saitų žymėjimą;cmd-links-unmark;
+atverk saitą aštuoni aštuoni kitame lange;cmd-link-open-in-new-window-n;88
+atverk saitą aštuoni aštuoni naujame lange;cmd-link-open-in-new-window-n;88
+atverk saitą aštuoni devyni kitame lange;cmd-link-open-in-new-window-n;89
+atverk saitą aštuoni devyni naujame lange;cmd-link-open-in-new-window-n;89
+atverk saitą aštuoni du kitame lange;cmd-link-open-in-new-window-n;82
+atverk saitą aštuoni du naujame lange;cmd-link-open-in-new-window-n;82
+atverk saitą aštuoni keturi kitame lange;cmd-link-open-in-new-window-n;84
+atverk saitą aštuoni keturi naujame lange;cmd-link-open-in-new-window-n;84
+atverk saitą aštuoni kitame lange;cmd-link-open-in-new-window-n;8
+atverk saitą aštuoni naujame lange;cmd-link-open-in-new-window-n;8
+atverk saitą aštuoni nulis kitame lange;cmd-link-open-in-new-window-n;80
+atverk saitą aštuoni nulis naujame lange;cmd-link-open-in-new-window-n;80
+atverk saitą aštuoni penki kitame lange;cmd-link-open-in-new-window-n;85
+atverk saitą aštuoni penki naujame lange;cmd-link-open-in-new-window-n;85
+atverk saitą aštuoni septyni kitame lange;cmd-link-open-in-new-window-n;87
+atverk saitą aštuoni septyni naujame lange;cmd-link-open-in-new-window-n;87
+atverk saitą aštuoni trys kitame lange;cmd-link-open-in-new-window-n;83
+atverk saitą aštuoni trys naujame lange;cmd-link-open-in-new-window-n;83
+atverk saitą aštuoni vienas kitame lange;cmd-link-open-in-new-window-n;81
+atverk saitą aštuoni vienas naujame lange;cmd-link-open-in-new-window-n;81
+atverk saitą aštuoni šeši kitame lange;cmd-link-open-in-new-window-n;86
+atverk saitą aštuoni šeši naujame lange;cmd-link-open-in-new-window-n;86
+atverk saitą devyni aštuoni kitame lange;cmd-link-open-in-new-window-n;98
+atverk saitą devyni aštuoni naujame lange;cmd-link-open-in-new-window-n;98
+atverk saitą devyni devyni kitame lange;cmd-link-open-in-new-window-n;99
+atverk saitą devyni devyni naujame lange;cmd-link-open-in-new-window-n;99
+atverk saitą devyni du kitame lange;cmd-link-open-in-new-window-n;92
+atverk saitą devyni du naujame lange;cmd-link-open-in-new-window-n;92
+atverk saitą devyni keturi kitame lange;cmd-link-open-in-new-window-n;94
+atverk saitą devyni keturi naujame lange;cmd-link-open-in-new-window-n;94
+atverk saitą devyni kitame lange;cmd-link-open-in-new-window-n;9
+atverk saitą devyni naujame lange;cmd-link-open-in-new-window-n;9
+atverk saitą devyni nulis kitame lange;cmd-link-open-in-new-window-n;90
+atverk saitą devyni nulis naujame lange;cmd-link-open-in-new-window-n;90
+atverk saitą devyni penki kitame lange;cmd-link-open-in-new-window-n;95
+atverk saitą devyni penki naujame lange;cmd-link-open-in-new-window-n;95
+atverk saitą devyni septyni kitame lange;cmd-link-open-in-new-window-n;97
+atverk saitą devyni septyni naujame lange;cmd-link-open-in-new-window-n;97
+atverk saitą devyni trys kitame lange;cmd-link-open-in-new-window-n;93
+atverk saitą devyni trys naujame lange;cmd-link-open-in-new-window-n;93
+atverk saitą devyni vienas kitame lange;cmd-link-open-in-new-window-n;91
+atverk saitą devyni vienas naujame lange;cmd-link-open-in-new-window-n;91
+atverk saitą devyni šeši kitame lange;cmd-link-open-in-new-window-n;96
+atverk saitą devyni šeši naujame lange;cmd-link-open-in-new-window-n;96
+atverk saitą du aštuoni kitame lange;cmd-link-open-in-new-window-n;28
+atverk saitą du aštuoni naujame lange;cmd-link-open-in-new-window-n;28
+atverk saitą du devyni kitame lange;cmd-link-open-in-new-window-n;29
+atverk saitą du devyni naujame lange;cmd-link-open-in-new-window-n;29
+atverk saitą du du kitame lange;cmd-link-open-in-new-window-n;22
+atverk saitą du du naujame lange;cmd-link-open-in-new-window-n;22
+atverk saitą du keturi kitame lange;cmd-link-open-in-new-window-n;24
+atverk saitą du keturi naujame lange;cmd-link-open-in-new-window-n;24
+atverk saitą du kitame lange;cmd-link-open-in-new-window-n;2
+atverk saitą du naujame lange;cmd-link-open-in-new-window-n;2
+atverk saitą du nulis kitame lange;cmd-link-open-in-new-window-n;20
+atverk saitą du nulis naujame lange;cmd-link-open-in-new-window-n;20
+atverk saitą du penki kitame lange;cmd-link-open-in-new-window-n;25
+atverk saitą du penki naujame lange;cmd-link-open-in-new-window-n;25
+atverk saitą du septyni kitame lange;cmd-link-open-in-new-window-n;27
+atverk saitą du septyni naujame lange;cmd-link-open-in-new-window-n;27
+atverk saitą du trys kitame lange;cmd-link-open-in-new-window-n;23
+atverk saitą du trys naujame lange;cmd-link-open-in-new-window-n;23
+atverk saitą du vienas kitame lange;cmd-link-open-in-new-window-n;21
+atverk saitą du vienas naujame lange;cmd-link-open-in-new-window-n;21
+atverk saitą du šeši kitame lange;cmd-link-open-in-new-window-n;26
+atverk saitą du šeši naujame lange;cmd-link-open-in-new-window-n;26
+atverk saitą keturi aštuoni kitame lange;cmd-link-open-in-new-window-n;48
+atverk saitą keturi aštuoni naujame lange;cmd-link-open-in-new-window-n;48
+atverk saitą keturi devyni kitame lange;cmd-link-open-in-new-window-n;49
+atverk saitą keturi devyni naujame lange;cmd-link-open-in-new-window-n;49
+atverk saitą keturi du kitame lange;cmd-link-open-in-new-window-n;42
+atverk saitą keturi du naujame lange;cmd-link-open-in-new-window-n;42
+atverk saitą keturi keturi kitame lange;cmd-link-open-in-new-window-n;44
+atverk saitą keturi keturi naujame lange;cmd-link-open-in-new-window-n;44
+atverk saitą keturi kitame lange;cmd-link-open-in-new-window-n;4
+atverk saitą keturi naujame lange;cmd-link-open-in-new-window-n;4
+atverk saitą keturi nulis kitame lange;cmd-link-open-in-new-window-n;40
+atverk saitą keturi nulis naujame lange;cmd-link-open-in-new-window-n;40
+atverk saitą keturi penki kitame lange;cmd-link-open-in-new-window-n;45
+atverk saitą keturi penki naujame lange;cmd-link-open-in-new-window-n;45
+atverk saitą keturi septyni kitame lange;cmd-link-open-in-new-window-n;47
+atverk saitą keturi septyni naujame lange;cmd-link-open-in-new-window-n;47
+atverk saitą keturi trys kitame lange;cmd-link-open-in-new-window-n;43
+atverk saitą keturi trys naujame lange;cmd-link-open-in-new-window-n;43
+atverk saitą keturi vienas kitame lange;cmd-link-open-in-new-window-n;41
+atverk saitą keturi vienas naujame lange;cmd-link-open-in-new-window-n;41
+atverk saitą keturi šeši kitame lange;cmd-link-open-in-new-window-n;46
+atverk saitą keturi šeši naujame lange;cmd-link-open-in-new-window-n;46
+atverk saitą penki aštuoni kitame lange;cmd-link-open-in-new-window-n;58
+atverk saitą penki aštuoni naujame lange;cmd-link-open-in-new-window-n;58
+atverk saitą penki devyni kitame lange;cmd-link-open-in-new-window-n;59
+atverk saitą penki devyni naujame lange;cmd-link-open-in-new-window-n;59
+atverk saitą penki du kitame lange;cmd-link-open-in-new-window-n;52
+atverk saitą penki du naujame lange;cmd-link-open-in-new-window-n;52
+atverk saitą penki keturi kitame lange;cmd-link-open-in-new-window-n;54
+atverk saitą penki keturi naujame lange;cmd-link-open-in-new-window-n;54
+atverk saitą penki kitame lange;cmd-link-open-in-new-window-n;5
+atverk saitą penki naujame lange;cmd-link-open-in-new-window-n;5
+atverk saitą penki nulis kitame lange;cmd-link-open-in-new-window-n;50
+atverk saitą penki nulis naujame lange;cmd-link-open-in-new-window-n;50
+atverk saitą penki penki kitame lange;cmd-link-open-in-new-window-n;55
+atverk saitą penki penki naujame lange;cmd-link-open-in-new-window-n;55
+atverk saitą penki septyni kitame lange;cmd-link-open-in-new-window-n;57
+atverk saitą penki septyni naujame lange;cmd-link-open-in-new-window-n;57
+atverk saitą penki trys kitame lange;cmd-link-open-in-new-window-n;53
+atverk saitą penki trys naujame lange;cmd-link-open-in-new-window-n;53
+atverk saitą penki vienas kitame lange;cmd-link-open-in-new-window-n;51
+atverk saitą penki vienas naujame lange;cmd-link-open-in-new-window-n;51
+atverk saitą penki šeši kitame lange;cmd-link-open-in-new-window-n;56
+atverk saitą penki šeši naujame lange;cmd-link-open-in-new-window-n;56
+atverk saitą septyni aštuoni kitame lange;cmd-link-open-in-new-window-n;78
+atverk saitą septyni aštuoni naujame lange;cmd-link-open-in-new-window-n;78
+atverk saitą septyni devyni kitame lange;cmd-link-open-in-new-window-n;79
+atverk saitą septyni devyni naujame lange;cmd-link-open-in-new-window-n;79
+atverk saitą septyni du kitame lange;cmd-link-open-in-new-window-n;72
+atverk saitą septyni du naujame lange;cmd-link-open-in-new-window-n;72
+atverk saitą septyni keturi kitame lange;cmd-link-open-in-new-window-n;74
+atverk saitą septyni keturi naujame lange;cmd-link-open-in-new-window-n;74
+atverk saitą septyni kitame lange;cmd-link-open-in-new-window-n;7
+atverk saitą septyni naujame lange;cmd-link-open-in-new-window-n;7
+atverk saitą septyni nulis kitame lange;cmd-link-open-in-new-window-n;70
+atverk saitą septyni nulis naujame lange;cmd-link-open-in-new-window-n;70
+atverk saitą septyni penki kitame lange;cmd-link-open-in-new-window-n;75
+atverk saitą septyni penki naujame lange;cmd-link-open-in-new-window-n;75
+atverk saitą septyni septyni kitame lange;cmd-link-open-in-new-window-n;77
+atverk saitą septyni septyni naujame lange;cmd-link-open-in-new-window-n;77
+atverk saitą septyni trys kitame lange;cmd-link-open-in-new-window-n;73
+atverk saitą septyni trys naujame lange;cmd-link-open-in-new-window-n;73
+atverk saitą septyni vienas kitame lange;cmd-link-open-in-new-window-n;71
+atverk saitą septyni vienas naujame lange;cmd-link-open-in-new-window-n;71
+atverk saitą septyni šeši kitame lange;cmd-link-open-in-new-window-n;76
+atverk saitą septyni šeši naujame lange;cmd-link-open-in-new-window-n;76
+atverk saitą trys aštuoni kitame lange;cmd-link-open-in-new-window-n;38
+atverk saitą trys aštuoni naujame lange;cmd-link-open-in-new-window-n;38
+atverk saitą trys devyni kitame lange;cmd-link-open-in-new-window-n;39
+atverk saitą trys devyni naujame lange;cmd-link-open-in-new-window-n;39
+atverk saitą trys du kitame lange;cmd-link-open-in-new-window-n;32
+atverk saitą trys du naujame lange;cmd-link-open-in-new-window-n;32
+atverk saitą trys keturi kitame lange;cmd-link-open-in-new-window-n;34
+atverk saitą trys keturi naujame lange;cmd-link-open-in-new-window-n;34
+atverk saitą trys kitame lange;cmd-link-open-in-new-window-n;3
+atverk saitą trys naujame lange;cmd-link-open-in-new-window-n;3
+atverk saitą trys nulis kitame lange;cmd-link-open-in-new-window-n;30
+atverk saitą trys nulis naujame lange;cmd-link-open-in-new-window-n;30
+atverk saitą trys penki kitame lange;cmd-link-open-in-new-window-n;35
+atverk saitą trys penki naujame lange;cmd-link-open-in-new-window-n;35
+atverk saitą trys septyni kitame lange;cmd-link-open-in-new-window-n;37
+atverk saitą trys septyni naujame lange;cmd-link-open-in-new-window-n;37
+atverk saitą trys trys kitame lange;cmd-link-open-in-new-window-n;33
+atverk saitą trys trys naujame lange;cmd-link-open-in-new-window-n;33
+atverk saitą trys vienas kitame lange;cmd-link-open-in-new-window-n;31
+atverk saitą trys vienas naujame lange;cmd-link-open-in-new-window-n;31
+atverk saitą trys šeši kitame lange;cmd-link-open-in-new-window-n;36
+atverk saitą trys šeši naujame lange;cmd-link-open-in-new-window-n;36
+atverk saitą vienas aštuoni kitame lange;cmd-link-open-in-new-window-n;18
+atverk saitą vienas aštuoni naujame lange;cmd-link-open-in-new-window-n;18
+atverk saitą vienas devyni kitame lange;cmd-link-open-in-new-window-n;19
+atverk saitą vienas devyni naujame lange;cmd-link-open-in-new-window-n;19
+atverk saitą vienas du kitame lange;cmd-link-open-in-new-window-n;12
+atverk saitą vienas du naujame lange;cmd-link-open-in-new-window-n;12
+atverk saitą vienas keturi kitame lange;cmd-link-open-in-new-window-n;14
+atverk saitą vienas keturi naujame lange;cmd-link-open-in-new-window-n;14
+atverk saitą vienas kitame lange;cmd-link-open-in-new-window-n;1
+atverk saitą vienas naujame lange;cmd-link-open-in-new-window-n;1
+atverk saitą vienas nulis kitame lange;cmd-link-open-in-new-window-n;10
+atverk saitą vienas nulis naujame lange;cmd-link-open-in-new-window-n;10
+atverk saitą vienas penki kitame lange;cmd-link-open-in-new-window-n;15
+atverk saitą vienas penki naujame lange;cmd-link-open-in-new-window-n;15
+atverk saitą vienas septyni kitame lange;cmd-link-open-in-new-window-n;17
+atverk saitą vienas septyni naujame lange;cmd-link-open-in-new-window-n;17
+atverk saitą vienas trys kitame lange;cmd-link-open-in-new-window-n;13
+atverk saitą vienas trys naujame lange;cmd-link-open-in-new-window-n;13
+atverk saitą vienas vienas kitame lange;cmd-link-open-in-new-window-n;11
+atverk saitą vienas vienas naujame lange;cmd-link-open-in-new-window-n;11
+atverk saitą vienas šeši kitame lange;cmd-link-open-in-new-window-n;16
+atverk saitą vienas šeši naujame lange;cmd-link-open-in-new-window-n;16
+atverk saitą šeši aštuoni kitame lange;cmd-link-open-in-new-window-n;68
+atverk saitą šeši aštuoni naujame lange;cmd-link-open-in-new-window-n;68
+atverk saitą šeši devyni kitame lange;cmd-link-open-in-new-window-n;69
+atverk saitą šeši devyni naujame lange;cmd-link-open-in-new-window-n;69
+atverk saitą šeši du kitame lange;cmd-link-open-in-new-window-n;62
+atverk saitą šeši du naujame lange;cmd-link-open-in-new-window-n;62
+atverk saitą šeši keturi kitame lange;cmd-link-open-in-new-window-n;64
+atverk saitą šeši keturi naujame lange;cmd-link-open-in-new-window-n;64
+atverk saitą šeši kitame lange;cmd-link-open-in-new-window-n;6
+atverk saitą šeši naujame lange;cmd-link-open-in-new-window-n;6
+atverk saitą šeši nulis kitame lange;cmd-link-open-in-new-window-n;60
+atverk saitą šeši nulis naujame lange;cmd-link-open-in-new-window-n;60
+atverk saitą šeši penki kitame lange;cmd-link-open-in-new-window-n;65
+atverk saitą šeši penki naujame lange;cmd-link-open-in-new-window-n;65
+atverk saitą šeši septyni kitame lange;cmd-link-open-in-new-window-n;67
+atverk saitą šeši septyni naujame lange;cmd-link-open-in-new-window-n;67
+atverk saitą šeši trys kitame lange;cmd-link-open-in-new-window-n;63
+atverk saitą šeši trys naujame lange;cmd-link-open-in-new-window-n;63
+atverk saitą šeši vienas kitame lange;cmd-link-open-in-new-window-n;61
+atverk saitą šeši vienas naujame lange;cmd-link-open-in-new-window-n;61
+atverk saitą šeši šeši kitame lange;cmd-link-open-in-new-window-n;66
+atverk saitą šeši šeši naujame lange;cmd-link-open-in-new-window-n;66
+pagrindinis meniu;cmd-menu-gc-main;
+sužymėk visus saitus;cmd-links-mark-all;
+sužymėk visus tinklalapio saitus;cmd-links-mark-all;
+vertėjas;cmd-custom-page-theme-n;15

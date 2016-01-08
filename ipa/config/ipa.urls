@@ -1,0 +1,21 @@
+{
+    "description": "IPA atveriamų tinklalapių sąrašas; json formatas, utf-8.",
+
+    "žinios": "http://www.lrt.lt/naujienos",
+    "sportas": "http://www.sportas.lt/", 
+    "orai": "http://meteo.lt/",
+    "paieška": "https://archive.org/web/", 
+    "google": "https://www.google.lt/", 
+    "bing": "https://www.bing.com/",
+    "yahoo": "https://www.yahoo.com/", 
+    "bendravimas": "http://www.draugas.lt", 
+    "facebook": "https://lt-lt.facebook.com/",
+    "twitter": "https://twitter.com/", 
+    "linkedin": "https://www.linkedin.com/", 
+    "instagram": "https://instagram.com/",
+    "video": "https://vimeo.com/", 
+    "youtube": "https://www.youtube.com/", 
+    "wikipedia": "https://lt.wikipedia.org", 
+    "žodynai": "http://www.ims.mii.lt/EK%C5%BD/", 
+    "vertimai": "https://translate.google.com/"
+}

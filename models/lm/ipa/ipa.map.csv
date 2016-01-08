@@ -1,0 +1,115 @@
+﻿phrase;command;cmd-arg
+atverk instagram;cmd-open-url;instagram
+atverk instagram svetainę;cmd-open-url;instagram
+instagram;cmd-open-url;instagram
+instagram svetainė;cmd-open-url;instagram
+atverk bing;cmd-open-url;bing
+atverk bing svetainę;cmd-open-url;bing
+bing ieškok;cmd-open-url;bing
+bing paieška;cmd-open-url;bing
+atverk vertimo svetainę;cmd-open-url;vertimai
+išversk;cmd-open-url;vertimai
+išversti;cmd-open-url;vertimai
+reikia išversti;cmd-open-url;vertimai
+reikia vertimo;cmd-open-url;vertimai
+vertimas;cmd-open-url;vertimai
+vertimo svetainė;cmd-open-url;vertimai
+atverk feisbuk;cmd-open-url;facebook
+atverk feisbuk svetainę;cmd-open-url;facebook
+feisbuk;cmd-open-url;facebook
+feisbuk svetainė;cmd-open-url;facebook
+užverk;cmd-browser-close;
+užverk interneto naršyklę;cmd-browser-close;
+užverk naršyklę;cmd-browser-close;
+užverk svetainę;cmd-browser-close;
+užverk tinklalapį;cmd-browser-close;
+atverk orų svetainę;cmd-open-url;orai
+atverk orų tinklalapį;cmd-open-url;orai
+kokie orai;cmd-open-url;orai
+kokie rytoj orai;cmd-open-url;orai
+koks oras;cmd-open-url;orai
+orai;cmd-open-url;orai
+orų naujienos;cmd-open-url;orai
+orų prognozė;cmd-open-url;orai
+rodyk orus;cmd-open-url;orai
+rodyk orų prognozę;cmd-open-url;orai
+savaitės orai;cmd-open-url;orai
+atverk tviter;cmd-open-url;twitter
+atverk tviter svetainę;cmd-open-url;twitter
+tviter;cmd-open-url;twitter
+tviter svetainė;cmd-open-url;twitter
+atverk interneto naršyklę;cmd-browser-open;
+atverk naršyklę;cmd-browser-open;
+internetas;cmd-browser-open;
+interneto naršyklė;cmd-browser-open;
+naršyklė;cmd-browser-open;
+naršyti;cmd-browser-open;
+naršyti internete;cmd-browser-open;
+atverk vikipedija;cmd-open-url;wikipedia
+atverk vikipedija svetainę;cmd-open-url;wikipedia
+vikipedija;cmd-open-url;wikipedia
+vikipedija enciklopedija;cmd-open-url;wikipedia
+vikipedija svetainė;cmd-open-url;wikipedia
+atverk linktin;cmd-open-url;linkedin
+atverk linktin svetainę;cmd-open-url;linkedin
+linktin;cmd-open-url;linkedin
+linktin svetainė;cmd-open-url;linkedin
+klipai;cmd-open-url;video
+rodyk klipus;cmd-open-url;video
+rodyk vaizdo įrašus;cmd-open-url;video
+rodyk video įrašus;cmd-open-url;video
+vaizdai;cmd-open-url;video
+vaizdo klipai;cmd-open-url;video
+vaizdo įrašai;cmd-open-url;video
+video;cmd-open-url;video
+video klipai;cmd-open-url;video
+video įrašai;cmd-open-url;video
+atverk jahū;cmd-open-url;yahoo
+atverk jahū svetainę;cmd-open-url;yahoo
+jahū ieškok;cmd-open-url;yahoo
+jahū paieška;cmd-open-url;yahoo
+atverk sporto naujienas;cmd-open-url;sportas
+atverk sporto svetainę;cmd-open-url;sportas
+atverk sporto žinias;cmd-open-url;sportas
+kokie rezultatai;cmd-open-url;sportas
+rodyk rezultatus;cmd-open-url;sportas
+rodyk sporto naujienas;cmd-open-url;sportas
+rodyk sportą;cmd-open-url;sportas
+sportas;cmd-open-url;sportas
+sporto naujienos;cmd-open-url;sportas
+sporto rezultatai;cmd-open-url;sportas
+sporto svetainė;cmd-open-url;sportas
+sporto žinios;cmd-open-url;sportas
+atverk jūtūb;cmd-open-url;youtube
+atverk jūtūb svetainę;cmd-open-url;youtube
+jūtūb;cmd-open-url;youtube
+jūtūb klipai;cmd-open-url;youtube
+jūtūb svetainė;cmd-open-url;youtube
+atverk naujienas;cmd-open-url;žinios
+atverk naujienų svetainę;cmd-open-url;žinios
+kas naujo;cmd-open-url;žinios
+kas naujo pasaulyje;cmd-open-url;žinios
+kokios naujienos;cmd-open-url;žinios
+naujienos;cmd-open-url;žinios
+naujienų svetainė;cmd-open-url;žinios
+rodyk naujienas;cmd-open-url;žinios
+rodyk žinias;cmd-open-url;žinios
+žinios;cmd-open-url;žinios
+atverk gūgl;cmd-open-url;google
+atverk gūgl svetainę;cmd-open-url;google
+gūgl ieškok;cmd-open-url;google
+gūgl paieška;cmd-open-url;google
+bendravimas;cmd-open-url;bendravimas
+draugai;cmd-open-url;bendravimas
+draugų pranešimai;cmd-open-url;bendravimas
+draugų skelbimai;cmd-open-url;bendravimas
+atverk paieškos svetainę;cmd-open-url;paieška
+atverk paiešką;cmd-open-url;paieška
+ieškok;cmd-open-url;paieška
+ieškok internete;cmd-open-url;paieška
+paieška;cmd-open-url;paieška
+paieška internete;cmd-open-url;paieška
+paieškos svetainė;cmd-open-url;paieška
+atverk žodyną;cmd-open-url;žodynai
+rodyk žodyną;cmd-open-url;žodynai
+žodynas;cmd-open-url;žodynai

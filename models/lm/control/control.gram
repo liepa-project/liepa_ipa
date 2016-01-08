@@ -1,0 +1,1033 @@
+#JSGF V1.0 UTF-8;
+
+/**
+ *
+ * Paslaugos "Valdytuvas" JSGF gramatika, (C) MII, APS, LIEPA 2014
+ *
+ * Terminų/žodžių šaltiniai:
+ *
+ *   - Anglų–lietuvių kalbų kompiuterijos žodynėlis;
+ *     (http://ims.mii.lt/ALK%C5%BD/)
+ *
+ *   - Microsoft terminologija;
+ *     (https://www.microsoft.com/Language/en-US/Default.aspx)
+ *
+ */
+
+
+grammar valdytuvas;
+
+
+/****************************************
+ * Funkcijos, bendros visoms programoms *
+ ****************************************/
+
+/**
+ * v1. Parodyti Valdytuvo pagalbinį langą su galimomis esamame kontekste dažniausiai naudojamomis balso komandomis
+ */
+<cmd-show-commands> = parodyk komandas;
+
+/**
+ * 1. Paleisti programą:
+ */
+/**
+ * 1.1. Paleisti numatytąją rašyklę
+ */
+<cmd-run-editor-app> = paleisk rašyklę;
+
+/**
+ * 1.2. Paleisti numatytąją skaičiuoklę
+ */
+<cmd-run-spreadsheet-app> = paleisk skaičiuoklę;
+
+/**
+ * 1.3. Paleisti numatytąją pateikčių rengyklę
+ */
+<cmd-run-presentation-app> = paleisk pateikčių rengyklę;
+
+/**
+ * 1.4. Paleisti numatytąją pašto programą
+ */
+<cmd-run-email-app> = paleisk (pašto programą | paštą);
+
+/**
+ * 1.5. Paleisti leistuvę VLC media player
+ */
+<cmd-run-vlc-player> = paleisk leistuvę;
+
+/**
+ * 1.6. Paleisti failų tvarkytuvę Windows Explorer
+ */
+<cmd-run-explorer> = paleisk failų tvarkytuvę;
+
+/**
+ * 2. Suskleisti (angl. minimize) langą
+ */
+<cmd-minimize-window> = suskleisk langą;
+
+/**
+ * 3. Padidinti (angl. maximize) langą
+ */
+<cmd-maximize-window> = padidink langą;
+
+/**
+ * 4. Sumažinti (angl. restore) padidintą langą
+ */
+<cmd-restore-maximized-window> = sumažink langą;
+
+/**
+ * 5. Tarp kelių veikiančių programų aktyvuoti norimos programos langą:
+ */
+/**
+ * 5.1. Aktyvinti ir parodyti numatytosios rašyklės langą
+ */
+<cmd-show-editor-app> = parodyk rašyklę;
+
+/**
+ * 5.2. Aktyvinti ir parodyti numatytosios skaičiuoklės langą
+ */
+<cmd-show-spreadsheet-app> = parodyk skaičiuoklę;
+
+/**
+ * 5.3. Aktyvinti ir parodyti numatytosios pateikčių rengyklės langą
+ */
+<cmd-show-presentation-app> = parodyk pateikčių rengyklę;
+
+/**
+ * 5.4. Aktyvinti ir parodyti numatytosios el. pašto programos langą
+ */
+<cmd-show-email-app> = parodyk pašto programą;
+
+/**
+ * 5.5 Aktyvinti ir parodyti VLC media player leistuvės langą
+ */
+<cmd-show-vlc-player> = parodyk leistuvę;
+
+/**
+ * 5.6 Aktyvinti ir parodyti Windows Explorer failų tvarkytuvės langą
+ */
+<cmd-show-explorer> = parodyk failų tvarkytuvę;
+
+/**
+ * 6. Užverti (angl. close) langą
+ * 28. Užverti dokumentą
+ */
+<cmd-close> = užverk [langą | dokumentą];
+
+/**
+ * 7. Baigti darbą su programa (angl. exit, quit, close)
+ */
+<cmd-exit> = užbaik programos darbą | išjunk programą;
+
+/**
+ * 8. Programos dialogo ar pranešimų languose mygtukų „Gerai“ (angl. OK), „Taikyti“ (angl. apply), „Atsisakyti“ (angl. cancel) paspaudimo valdymas:
+ */
+/**
+ * 8.1. „Gerai“
+ */
+<cmd-enter> = gerai | vykdyk;
+
+/**
+ * 8.2. „Atsisakyti“
+ */
+<cmd-cancel> = atsisakyk | atšauk;
+
+
+/******************************************
+ * Judėjimas/slinkimas                    *
+ ******************************************/
+
+<t-cmove> = eik;
+
+/**
+ * 9. Programos bet kokio lango turinio slinkimas vienu puslapiu aukštyn (angl. page up)
+ * 40.2. Judėti laiškų sąrašu aukštyn per vieną puslapį [Page Up]
+ * 45.2. Judėti el. pašto aplankų medžiu aukštyn per vieną puslapį
+ * 67.2. Judėti katalogų ir failų sąrašu aukštyn per vieną puslapį [Page Up]
+ * 72.2. Judėti aplankų medžiu aukštyn per vieną puslapį [Page Up]
+ */
+<cmd-page-up> = ankstesnis puslapis | [ <t-cmove> ] puslapiu aukštyn;
+
+/**
+ * 10. Programos bet kokio lango turinio slinkimas vienu puslapiu žemyn (angl. page down)
+ * 40.1. Judėti laiškų sąrašu žemyn per vieną puslapį [Page Down]
+ * 45.1. Judėti el. pašto aplankų medžiu žemyn per vieną puslapį
+ * 67.1. Judėti katalogų ir failų sąrašu žemyn per vieną puslapį [Page Down]
+ * 72.1. Judėti aplankų medžiu žemyn per vieną puslapį [Page Down]
+ */
+<cmd-page-down> = tolesnis puslapis | [ <t-cmove> ] puslapiu žemyn;
+
+/**
+ * 11. Kopijuoti pažymėtą objektą į iškarpinę
+ */
+<cmd-copy> = kopijuok;
+
+/**
+ * 12. Iškirpti pažymėtą objektą į iškarpinę
+ */
+<cmd-cut> = iškirpk;
+
+/**
+ * 13. Įdėti (angl. paste) iškarpinės turinio kopiją
+ */
+<cmd-paste> = įdėk | įklijuok;
+
+/**
+ * 14. Pažymėti viską
+ */
+<cmd-select-all> = pažymėk viską;
+
+/**
+ * 15. Pašalinti pažymėtą objektą (angl. delete, remove)
+ */
+<cmd-delete> = pašalink;
+
+/**
+ * 16. Atšaukti paskutinį(-ius) veiksmą(-us) (angl. undo)
+ */
+<cmd-undo> = (atšauk | anuliuok) veiksmą;
+
+/**
+ * 17. Grąžinti paskutinį(-ius) atšauktą(-us) veiksmą(-us) (angl. redo)
+ */
+<cmd-redo> = (grąžink | atstatyk | perdaryk) veiksmą;
+
+
+/*******************************
+ * Raštinės programų funkcijos *
+ *******************************/
+
+/**
+ * 18. Pradėti naują dokumentą
+ */
+<cmd-new-document> = naujas dokumentas | sukurk naują dokumentą;
+
+/**
+ * 19. Parodyti dokumento atidarymo dialogo langą
+ * 32. Atverti laišką atskirame lange
+ * 55. Iškviesti medijos atidarymo dialogo langą
+ * 60. Atverti pažymėtą diską
+ * 61. Atverti pažymėtą aplanką
+ * 62. Atverti (paleisti) pažymėtą failą
+ */
+<cmd-open> = atverk [dokumentą | laišką | diską | aplanką | failą];
+
+/**
+ * 20. Rengiant dokumentą perjungti teksto lygiavimą į abipusę lygiuotę (angl. justified alignment)
+ */
+<cmd-justified-alignment> = abipusė lygiuotė | įjunk abipusę lygiuotę;
+
+/**
+ * 21. Rengiant dokumentą perjungti teksto lygiavimą į centrinę lygiuotę (angl. center alignment)
+ */
+<cmd-center-alignment> = centrinė lygiuotė | įjunk centrinę lygiuotę;
+
+/**
+ * 22. Rengiant dokumentą perjungti teksto lygiavimą į dešininę lygiuotę (angl. right alignment)
+ */
+<cmd-right-alignment> = dešininė lygiuotė | įjunk dešininę lygiuotę;
+
+/**
+ * 23. Rengiant dokumentą perjungti teksto lygiavimą į kairinę lygiuotę (angl. left alignment)
+ */
+<cmd-left-alignment> = kairinė lygiuotė | įjunk kairinę lygiuotę;
+
+/**
+ * 24. Įrašyti dokumentą
+ * 30. Įrašyti rengiamą laišką
+ */
+<cmd-save> = įrašyk [dokumentą | laišką];
+
+/**
+ * 25. Įrašyti dokumentą kaip („Įrašyti kaip“ dialogo lango iškvietimas (parodymas))
+ */
+<cmd-save-as> = įrašyk kitu vardu [dokumentą];
+
+/**
+ * 26. Įjungti dokumento spaudinio peržiūrą
+ * 33. Įjungti laiško spaudinio peržiūrą
+ */
+<cmd-print-preview> = spaudinio peržiūra | įjunk spaudinio peržiūrą;
+
+/**
+ * 27. Spausdinti dokumentą
+ * 34. Spausdinti laišką
+ */
+<cmd-print> = spausdink [dokumentą | laišką];
+
+/**
+ * 28. Užverti dokumentą
+ */
+//public <cmd-close>: apibrėžta aukščiau
+
+
+/*****************************************
+ * Elektroninio pašto programų funkcijos *
+ *****************************************/
+
+/**
+ * 29. Pradėti naują laišką
+ */
+<cmd-new-email-message> = naujas laiškas | sukurk naują laišką;
+
+/**
+ * 30. Įrašyti rengiamą laišką
+ */
+//public <cmd-save>: apibrėžta aukščiau
+
+/**
+ * 31. Išsiųsti laišką
+ */
+<cmd-send> = išsiųsk [laišką];
+
+/**
+ * 32. Atverti laišką atskirame lange
+ */
+//public <cmd-open>: apibrėžta aukščiau
+
+/**
+ * 33. Įjungti laiško spaudinio peržiūrą
+ */
+//public <cmd-print-preview>: apibrėžta aukščiau
+
+/**
+ * 34. Spausdinti laišką
+ */
+//public <cmd-print>: apibrėžta aukščiau
+
+/**
+ * 35. Atsakyti į laišką (angl. reply)
+ */
+<cmd-reply> = atsakyk [į laišką];
+
+/**
+ * 36. Atsakyti visiems į laišką (angl. reply all)
+ */
+<cmd-reply-all> = atsakyk visiems [į laišką];
+
+/**
+ * 37. Persiųsti laišką (angl. forward)
+ */
+<cmd-forward-email-message> = persiųsk [laišką];
+
+/**
+ * 38. Rengiant laišką iškviesti (parodyti) laiško priedo (failo) pridėjimo dialogo langą
+ */
+<cmd-attach-file> = pridėk priedą;
+
+/**
+ * 39. Judėti laiškų sąrašu žemyn / aukštyn per vieną laišką (pažymint laišką):
+ */
+/**
+ * 39.1. Judėti laiškų sąrašu žemyn per vieną laišką [↓]
+ * 44.1. Judėti el. pašto aplankų medžiu žemyn per vieną elementą [↓]
+ * 66.1. Judėti katalogų ir failų sąrašu žemyn per vieną elementą [↓]
+ * 71.1. Judėti aplankų medžiu žemyn per vieną elementą [↓]
+ */
+<cmd-down> = [<t-cmove>] žemyn;
+
+/**
+ * 39.2. Judėti laiškų sąrašu aukštyn per vieną laišką [↑]
+ * 44.2. Judėti el. pašto aplankų medžiu aukštyn per vieną elementą [↑]
+ * 66.2. Judėti katalogų ir failų sąrašu aukštyn per vieną elementą [↑]
+ * 71.2. Judėti aplankų medžiu aukštyn per vieną elementą [↑]
+ */
+<cmd-up> = [<t-cmove>] aukštyn;
+
+/**
+ * 39.3. Peržiūrint laiškus atskirame lange ar kortelėje eiti į tolesnio laiško peržiūrą
+ */
+<cmd-next-email-message> = tolesnis laiškas | parodyk tolesnį laišką;
+
+/**
+ * 39.4. Peržiūrint laiškus atskirame lange ar kortelėje eiti į ankstesnio laiško peržiūrą
+ */
+<cmd-prev-email-message> = ankstesnis laiškas | parodyk ankstesnį laišką;
+
+/**
+ * 39.5. Peržiūrint laiškus atskirame lange ar kortelėje eiti į tolesnio neskaityto laiško peržiūrą
+ */
+<cmd-next-unread-email-message> = tolesnis neskaitytas laiškas | parodyk tolesnį neskaitytą laišką;
+
+/**
+ * 39.6. Peržiūrint laiškus atskirame lange ar kortelėje eiti į ankstesnio neskaityto laiško peržiūrą
+ */
+<cmd-prev-unread-email-message> = ankstesnis neskaitytas laiškas | parodyk ankstesnį neskaitytą laišką;
+
+/**
+ * 40. Judėti laiškų sąrašu žemyn / aukštyn per vieną puslapį (pažymint laišką):
+ */
+/**
+ * 40.1. Judėti laiškų sąrašu žemyn per vieną puslapį [Page Down]
+ */
+//public <cmd-page-down>: apibrėžta aukščiau
+
+/**
+ * 40.2. Judėti laiškų sąrašu aukštyn per vieną puslapį [Page Up]
+ */
+//public <cmd-page-up>: apibrėžta aukščiau
+
+/**
+ * 41. Pereiti į laiškų sąrašo pradžią (pažymint pirmą sąrašo laišką) [Home]
+ * 46. Pereiti į el. pašto aplankų medžio pradžią (pažymint pirmą el. pašto aplankų medžio elementą) [Home]
+ * 68. Pereiti į katalogų ir failų sąrašo pradžią (pažymint pradinį elementą) [Home]
+ * 73. Pereiti į aplankų medžio pradžią (pažymint pirmą aplankų medžio elementą) [Home]
+ */
+<cmd-home> = [<t-cmove>] į pradžią;
+
+/**
+ * 42. Pereiti į laiškų sąrašo pabaigą (pažymint paskutinį sąrašo laišką) [End]
+ * 47. Pereiti į el. pašto aplankų medžio pabaigą (pažymint paskutinį el. pašto aplankų medžio elementą) [End]
+ * 69. Pereiti į katalogų ir failų sąrašo pabaigą (pažymint paskutinį elementą) [End]
+ * 74. Pereiti į aplankų medžio pabaigą (pažymint paskutinį aplankų medžio elementą) [End]
+ */
+<cmd-end> = [<t-cmove>] į pabaigą;
+
+/**
+ * 43. Perėjimas (persijungimas) iš laiškų sąrašo į el. pašto aplankų medį ir atvirkščiai:
+ */
+/**
+ * 43.1. Perėjimas (persijungimas) iš laiškų sąrašo į el. pašto aplankų medį ir atvirkščiai
+ */
+<cmd-folder-tree> = aplankų medis | [pereik] į aplankų medį;
+
+/**
+ * 43.2. Perėjimas (persijungimas) iš el. pašto aplankų medžio į laiškų sąrašą
+ */
+<cmd-email-message-list> = laiškų sąrašas | [pereik] į laiškų sąrašą;
+
+/**
+ * 44. Judėti el. pašto aplankų medžiu žemyn / aukštyn per vieną elementą (pažymint elementą):
+ */
+/**
+ * 44.1. Judėti el. pašto aplankų medžiu žemyn per vieną elementą [↓]
+ */
+//public <cmd-down>: apibrėžta aukščiau
+
+/**
+ * 44.2. Judėti el. pašto aplankų medžiu aukštyn per vieną elementą [↑]
+ */
+//public <cmd-up>: apibrėžta aukščiau
+
+/**
+ * 45. Judėti el. pašto aplankų medžiu žemyn / aukštyn per vieną puslapį (pažymint elementą):
+ */
+/**
+ * 45.1. Judėti el. pašto aplankų medžiu žemyn per vieną puslapį
+ */
+//public <cmd-page-down>: apibrėžta aukščiau
+
+/**
+ * 45.2. Judėti el. pašto aplankų medžiu aukštyn per vieną puslapį
+ */
+//public <cmd-page-up>: apibrėžta aukščiau
+
+/**
+ * 46. Pereiti į el. pašto aplankų medžio pradžią (pažymint pirmą el. pašto aplankų medžio elementą) [Home]
+ */
+//public <cmd-home>: apibrėžta aukščiau
+
+/**
+ * 47. Pereiti į el. pašto aplankų medžio pabaigą (pažymint paskutinį el. pašto aplankų medžio elementą) [End]
+ */
+//public <cmd-end>: apibrėžta aukščiau
+
+/**
+ * 48. Išskleisti / suskleisti el. pašto aplankų medį ir jo elementus:
+ */
+/**
+ * 48.1. Išskleisti el. pašto aplankų medį ir jo elementus
+ * 75.1. Išskleisti aplankų medį ir jo elementus
+ */
+<cmd-expand> = išskleisk [elementus];
+
+/**
+ * 48.2. Suskleisti el. pašto aplankų medį ir jo elementus
+ * 75.2. Suskleisti aplankų medį ir jo elementus
+ */
+<cmd-collapse> = suskleisk [elementus];
+
+/**
+ * n1. Parodyti pagrindinių el. pašto aplanką "Gauti"
+ */
+<cmd-show-inbox> = gauti laiškai | parodyk gautus laiškus;
+
+/**
+ * n2. Paleistoje pašto programoje patikrinti paštą
+ */
+<cmd-email-check> = patikrink paštą;
+
+/**
+ * n3. Parodyti adresų knygą
+ */
+<cmd-show-address-book> = adresai | adresų knyga | adresatai | parodyk (adresus | adresų knygą | adresatus);
+
+/**
+ * n4. Parodyti kontaktus (adresatus) (taikoma tik Outlook)
+ */
+<cmd-show-contacts> = kontaktai | parodyk kontaktus;
+
+/**
+ * n5. Sukurti naują kontaktą
+ */
+<cmd-new-contact> = naujas (adresatas | kontaktas) | sukurk naują (adresatą | kontaktą);
+
+/**
+ * n6. Parodyti kalendorių
+ */
+<cmd-show-calendar> = kalendorius | parodyk kalendorių;
+
+/**
+ * n7. Nustatyti kalendoriaus rodymo laikotarpius: diena, savaitė, mėnuo:
+ */
+/**
+ * n7.1. diena
+ */
+<cmd-show-day-view> = (rodyk | parodyk) dieną;
+
+/**
+ * n7.2. savaitė
+ */
+<cmd-show-week-view> = (rodyk | parodyk) savaitę;
+
+/**
+ * n7.3. mėnuo
+ */
+<cmd-show-month-view> = (rodyk | parodyk) mėnesį;
+
+/**
+ * n8. Kalendoriuje parodyti šiandieną
+ */
+<cmd-show-today> = šiandiena | parodyk šiandieną;
+
+/**
+ * n9. Sukurti naują įvykį (angl. event) / paskyrą (angl. appointment, taikoma Outlook)
+ */
+<cmd-new-event> = naujas įvykis | nauja paskyra | sukurk naują (įvykį | paskyrą);
+
+/**
+ * n10. Sukurti naują susitikimą (taikoma tik Outlook)
+ */
+<cmd-new-meeting> = naujas susitikimas | sukurk naują susitikimą;
+
+/**
+ * n11. Persijungti į pašto rodymą
+ */
+<cmd-show-mail> = paštas | (rodyk | parodyk) paštą;
+
+
+/***********************************************************************************************
+ * Raštinės programų dokumentų rengimo ir elektroninio pašto programų laiškų rengimo funkcijos *
+ ***********************************************************************************************/
+/**
+ * 49. Įjungti / išjungti pusjuodį šriftą
+ */
+<cmd-toggle-bold> = pusjuodis;
+
+/**
+ * 50. Įjungti / išjungti kursyvų šriftą
+ */
+<cmd-toggle-italic> = kursyvas;
+
+/**
+ * 51. Įjungti / išjungti teksto pabraukimą
+ */
+<cmd-toggle-underline> = pabraukimas;
+
+/**
+ * 52. Padidinti / sumažinti šrifto dydį vienu vienetu:
+ */
+/**
+ * 52.1. Padidinti šrifto dydį vienu vienetu
+ */
+<cmd-grow-font> = padidink šriftą;
+
+/**
+ * 52.2. Sumažinti šrifto dydį vienu vienetu
+ */
+<cmd-shrink-font> = sumažink šriftą;
+
+/**
+ * 53. Iškviesti paveikslo įterpimo dialogo langą
+ */
+<cmd-insert-picture> = įterpk paveikslą;
+
+/**
+ * 54. Įterpti lentelę
+ */
+<cmd-insert-table> = įterpk lentelę;
+
+/**
+ * n12. Įterpti Euro ženklą
+ */
+<cmd-insert-euro-sign> = įterpk euro ženklą;
+
+
+/****************************************
+ * VLC media player programos funkcijos *
+ ****************************************/
+
+/**
+ * 55. Iškviesti medijos atidarymo dialogo langą
+ */
+//public <cmd-open>: apibrėžta aukščiau
+
+/**
+ * 56. Valdyti medijos grojimą (groti, pristabdyti, kitas / ankstesnis medijos failas ir t.t.):
+ */
+/**
+ * 56.1. Groti
+ */
+<cmd-play> = grok;
+
+/**
+ * 56.2. Pristabdyti, pauzė (angl. pause)
+ */
+<cmd-pause> = pauzė | pristabdyk;
+
+/**
+ * 56.3. Tęsti (angl. resume)
+ */
+<cmd-resume> = tęsk;
+
+/**
+ * 56.4. Tolesnis
+ */
+<cmd-next-item> = tolesnis;
+
+/**
+ * 56.5. Ankstesnis
+ */
+<cmd-prev-item> = ankstesnis;
+
+/**
+ * 56.6. Stabdyti (angl. stop)
+ */
+<cmd-stop> = stop | stabdyk;
+
+/**
+ * 57. Persijungti iš lango veiksenos į viso ekrano veikseną ir atvirkščiai:
+ */
+/**
+ * 57.1. Persijungti iš lango veiksenos į viso ekrano veikseną
+ */
+<cmd-enable-full-screen> = visas ekranas | (rodyk | parodyk) visame ekrane;
+
+/**
+ * 57.2. Persijungti iš viso ekrano veiksenos į lango veikseną
+ */
+<cmd-disable-full-screen> = išjunk visą ekraną | išeik iš viso ekrano;
+
+/**
+ * 58. Valdyti (didinti / mažinti) garsio lygį:
+ */
+/**
+ * 58.1. Didinti garsio lygį
+ * 81.1. Didinti garsio lygį
+ */
+<cmd-volume-up> = [padaryk] garsiau;
+
+/**
+ * 58.2. Mažinti garsio lygį
+ * 81.2. Mažinti garsio lygį
+ */
+<cmd-volume-down> = [padaryk] tyliau;
+
+/**
+ * 58.3. Išjungti / įjungti garsą (angl. mute)
+ * 81.3. Išjungti / įjungti garsą (angl. mute)
+ */
+<cmd-toggle-mute> = (išjunk | įjunk) garsą;
+
+
+/****************************************
+ * Windows Explorer programos funkcijos *
+ ****************************************/
+
+/**
+ * 59. Atverti „Kompiuteris“ langą (aplanką)
+ */
+<cmd-open-computer> = [mano] kompiuteris;
+
+/**
+ * 60. Atverti pažymėtą diską
+ */
+//public <cmd-open>: apibrėžta aukščiau
+
+/**
+ * 61. Atverti pažymėtą aplanką
+ */
+//public <cmd-open>: apibrėžta aukščiau
+
+/**
+ * 62. Atverti (paleisti) pažymėtą failą
+ */
+//public <cmd-open>: apibrėžta aukščiau
+
+/**
+ * 63. Atverti numatytąjį naudotojo dokumentų aplanką
+ */
+<cmd-open-documents> = [mano] dokumentai;
+
+/**
+ * 64. Atverti numatytąjį naudotojo paveikslų aplanką
+ */
+<cmd-open-pictures> = [mano] (paveikslai | nuotraukos);
+
+/**
+ * 65. Atverti numatytąjį naudotojo muzikos aplanką
+ */
+<cmd-open-music> = [mano] muzika;
+
+/**
+ * n13. Atverti numatytąjį naudotojo atsisiuntimų (siuntų) (angl. downloads) aplanką
+ */
+<cmd-open-downloads> = [mano] (siuntos | atsisiuntimai);
+
+/**
+ * 66. Judėti katalogų ir failų sąrašu žemyn / dešinėn / aukštyn / kairėn per vieną elementą (pažymint elementą):
+ */
+/**
+ * 66.1. Judėti katalogų ir failų sąrašu žemyn per vieną elementą [↓]
+ */
+//public <cmd-down>: apibrėžta aukščiau
+
+/**
+ * 66.2. Judėti katalogų ir failų sąrašu aukštyn per vieną elementą [↑]
+ */
+//public <cmd-up>: apibrėžta aukščiau
+
+/**
+ * 66.3. Judėti katalogų ir failų sąrašu į dešinę per vieną elementą [→]
+ */
+<cmd-right> = [ <t-cmove> ] (dešinėn | į dešinę);
+
+/**
+ * 66.4. Judėti katalogų ir failų sąrašu į kairę per vieną elementą [←]
+ */
+<cmd-left> = [ <t-cmove> ] (į kairę | kairėn);
+
+/**
+ * 67. Judėti katalogų ir failų sąrašu žemyn / aukštyn per vieną puslapį (pažymint elementą):
+ */
+/**
+ * 67.1. Judėti katalogų ir failų sąrašu žemyn per vieną puslapį [Page Down]
+ */
+//public <cmd-page-down>: apibrėžta aukščiau
+
+/**
+ * 67.2. Judėti katalogų ir failų sąrašu aukštyn per vieną puslapį [Page Up]
+ */
+//public <cmd-page-up>: apibrėžta aukščiau
+
+/**
+ * 68. Pereiti į katalogų ir failų sąrašo pradžią (pažymint pradinį elementą) [Home]
+ */
+//public <cmd-home>: apibrėžta aukščiau
+
+/**
+ * 69. Pereiti į katalogų ir failų sąrašo pabaigą (pažymint paskutinį elementą) [End]
+ */
+//public <cmd-end>: apibrėžta aukščiau
+
+/**
+ * n14. Judėti į viršutinį katalogą (angl. up)
+ */
+<cmd-up-to-folder> = viršaplankis | [eik] į viršaplankį;
+
+/**
+ * n15. Judėti katalogų ir failų sąrašu atgal (angl. back)
+ */
+<cmd-back-to-folder> = [eik] atgal;
+
+/**
+ * n16. Judėti katalogų ir failų sąrašu toliau (angl. forward)
+ */
+<cmd-forward-to-folder> = [eik] toliau;
+
+/**
+ * 70. Perėjimas (persijungimas) iš katalogų ir failų sąrašo į aplankų medį ir atvirkščiai:
+ */
+/**
+ * 70.1. Perėjimas (persijungimas) iš katalogų ir failų sąrašo į aplankų medį (naršymo sritį)
+ */
+<cmd-goto-navigation-pane> = naršymo sritis | [pereik] į naršymo sritį;
+
+/**
+ * 70.2. Perėjimas (persijungimas) iš aplankų medžio į katalogų ir failų sąrašą
+ */
+<cmd-goto-file-list> = failų sąrašas | [pereik] į failų sąrašą;
+
+/**
+ * n17. Tolesnis lango laukas / elementas ([Tab])
+ */
+<cmd-goto-next-item> = tolesnis (laukas | elementas) | [pereik] į tolesnį (lauką | elementą);
+
+/**
+ * n18. Ankstesnis lango laukas / elementas ([Shift]+[Tab])
+ */
+<cmd-goto-prev-item> = ankstesnis (laukas | elementas) | [pereik] į ankstesnį (lauką | elementą);
+
+/**
+ * 71. Judėti aplankų medžiu žemyn / aukštyn per vieną elementą (pažymint elementą):
+ */
+/**
+ * 71.1. Judėti aplankų medžiu žemyn per vieną elementą [↓]
+ */
+//public <cmd-down>: apibrėžta aukščiau
+
+/**
+ * 71.2. Judėti aplankų medžiu aukštyn per vieną elementą [↑]
+ */
+//public <cmd-up>: apibrėžta aukščiau
+
+/**
+ * 72. Judėti aplankų medžiu žemyn / aukštyn per vieną puslapį (pažymint elementą):
+ */
+/**
+ * 72.1. Judėti aplankų medžiu žemyn per vieną puslapį [Page Down]
+ */
+//public <cmd-page-down>: apibrėžta aukščiau
+
+/**
+ * 72.2 Judėti aplankų medžiu aukštyn per vieną puslapį [Page Up]
+ */
+//public <cmd-page-up>: apibrėžta aukščiau
+
+/**
+ * 73. Pereiti į aplankų medžio pradžią (pažymint pirmą aplankų medžio elementą) [Home]
+ */
+//public <cmd-home>: apibrėžta aukščiau
+
+/**
+ * 74. Pereiti į aplankų medžio pabaigą (pažymint paskutinį aplankų medžio elementą) [End]
+ */
+//public <cmd-end>: apibrėžta aukščiau
+
+/**
+ * 75. Išskleisti / suskleisti aplankų medį ir jo elementus:
+ */
+/**
+ * 75.1. Išskleisti aplankų medį ir jo elementus
+ */
+//public <cmd-expand>: apibrėžta aukščiau
+
+/**
+ * 75.2. Suskleisti aplankų medį ir jo elementus
+ */
+//public <cmd-collapse>: apibrėžta aukščiau
+
+/**
+ * 76. Parodyti pažymėto objekto ypatybes (angl. properties)
+ */
+<cmd-show-properties> = parodyk savybes;
+
+/**
+ * 77. Atverti „Valdymo skydelis“ langą
+ */
+<cmd-open-control-panel> = valdymo skydelis;
+
+/**
+ * 78. Veikiančių programų perjungimas: parodyti veikiančių programų langą [Ctrl]+[Alt]+[Tab]
+ */
+<cmd-apps-switch> = parodyk (atvertas | veikiančias) programas;
+
+/**
+ * 79. Sumažinti visus langus (parodyti darbalaukį)
+ */
+<cmd-show-desktop> = darbalaukis | parodyk darbalaukį;
+
+/**
+ * 80. Grąžinti sumažintus langus
+ */
+<cmd-restore-all-windows> = (grąžink | sugrąžink) langus;
+
+/**
+ * 81. Valdyti (didinti / mažinti) garsio lygį:
+ */
+/**
+ * 81.1. Didinti garsio lygį
+ */
+//public <cmd-volume-up>: apibrėžta aukščiau
+
+/**
+ * 81.2. Mažinti garsio lygį
+ */
+//public <cmd-volume-down>: apibrėžta aukščiau
+
+/**
+ * 81.3. Išjungti / įjungti garsą (angl. mute)
+ */
+//public <cmd-toggle-mute>: apibrėžta aukščiau
+
+/**
+ * 82. Užrakinti kompiuterį
+ */
+<cmd-lock-computer> = užrakink kompiuterį;
+
+/**
+ * 83. Atsijungti (angl. log off)
+ */
+<cmd-log-off> = (išeik | išeiti) iš sistemos;
+
+/**
+ * 84. Perjungti kompiuterį į miego būseną (angl. sleep mode)
+ */
+<cmd-sleep-mode> = įjunk miego (būseną | režimą);
+
+/**
+ * 85. Užmigdyti kompiuterį (angl. hibernate)
+ */
+<cmd-hibernate> = užmigdyk kompiuterį;
+
+/**
+ * 86. Išjungti kompiuterį (angl. shut down)
+ */
+<cmd-shut-down> = išjunk kompiuterį;
+
+
+/******************************************************
+ * 10 numatytų programų paleidimas iš tekstinio failo *
+ ******************************************************/
+
+/**
+ * n19. Paleisti programą „Skaičiuotuvas“
+ */
+<cmd-start-app-1> = skaičiuotuvas | paleisk skaičiuotuvą;
+
+/**
+ * n20. Paleisti programą „Užrašinė“
+ */
+<cmd-start-app-2> = užrašinė | paleisk užrašinę;
+
+/**
+ * n21. Paleisti pokalbių programą „Skype“
+ */
+<cmd-start-app-3> = pokalbių programa | paleisk pokalbių programą;
+
+/**
+ * n22. Paleisti komandinę eilutę
+ */
+<cmd-start-app-4> = komandinė eilutė | paleisk komandinę eilutę;
+
+/**
+ * n23. Parodyti naudotojo asmeninius aplankus
+ */
+<cmd-start-app-5> = asmeniniai aplankai | parodyk mano [asmeninius] aplankus;
+
+/**
+ * n24. Atverti naudotojo aplanką
+ */
+<cmd-start-app-6> = mano aplankas | atverk mano aplanką;
+
+/**
+ * n25. Atverti antrą naudotojo aplanką
+ */
+<cmd-start-app-7> = mano antras aplankas | atverk mano antrą aplanką;
+
+/**
+ * n26. Paleisti naudotojo programą
+ */
+<cmd-start-app-8> = mano programa | paleisk mano programą;
+
+/**
+ * n27. Paleisti antrą naudotojo programą
+ */
+<cmd-start-app-9> = mano antra programa | paleisk mano antrą programą;
+
+/**
+ * n28. Paleisti naudotojo žaidimą
+ */
+<cmd-start-app-10> = mano žaidimas | paleisk mano žaidimą;
+
+/**
+ * n29. Paleisti antrą naudotojo žaidimą
+ */
+<cmd-start-app-11> = mano antras žaidimas | paleisk mano antrą žaidimą;
+
+/**
+ * n30. Atverti aplanką „Žaidimai“
+ */
+<cmd-start-app-12> = žaidimai | parodyk žaidimus;
+
+/**
+ * n31. Atverti šiukšliadėžę
+ */
+<cmd-start-app-13> = (šiukšliadėžė | šiukšlinė) | atverk (šiukšliadėžę | šiukšlinę);
+;
+
+/**
+ * n32. Atverti Valdymo skydelio elementą „Personalizavimas“
+ */
+<cmd-start-app-14> = personalizavimas;
+
+/**
+ * n33. Atverti Valdymo skydelio elementą „Įrenginiai ir spausdintuvai“
+ */
+<cmd-start-app-15> = mano įrenginiai | parodyk mano įrenginius;
+
+
+/****************************
+ * Integracija su Naršytuvu *
+ ****************************/
+
+/**
+ * n34. Paleisti numatytąją naršyklę / Įjungti paslaugą "Naršytuvas".
+ */
+<cmd-narsytuvas> = naršytuvas | įjunk naršytuvą | naršyklė | paleisk naršyklę;
+
+
+/*******************************
+ * Speciali komanda sil (tyla) *
+ *******************************
+ * Vargiai tikslinga; SIL paieškos grafe sphinx'as įterpia savaime:
+ *
+ * We do add silence/filler self-loops to all states in order to allow 
+ * for silence between words and at the beginning and end of utterances.
+ */
+//public <cmd-sil> = sil;
+
+
+
+public <all-commands> =
+    <cmd-apps-switch> | <cmd-attach-file> | <cmd-back-to-folder> |
+    <cmd-cancel> | <cmd-center-alignment> | <cmd-close> | <cmd-collapse> |
+    <cmd-copy> | <cmd-cut> | <cmd-delete> | <cmd-disable-full-screen> |
+    <cmd-down> | <cmd-email-check> | <cmd-email-message-list> |
+    <cmd-enable-full-screen> | <cmd-end> | <cmd-enter> | <cmd-exit> |
+    <cmd-expand> | <cmd-folder-tree> | <cmd-forward-email-message> |
+    <cmd-forward-to-folder> | <cmd-goto-file-list> |
+    <cmd-goto-navigation-pane> | <cmd-goto-next-item> | <cmd-goto-prev-item> |
+    <cmd-grow-font> | <cmd-hibernate> | <cmd-home> | <cmd-insert-euro-sign> |
+    <cmd-insert-picture> | <cmd-insert-table> | <cmd-justified-alignment> |
+    <cmd-left-alignment> | <cmd-left> | <cmd-lock-computer> | <cmd-log-off> |
+    <cmd-maximize-window> | <cmd-minimize-window> | <cmd-narsytuvas> |
+    <cmd-new-contact> | <cmd-new-document> | <cmd-new-email-message> |
+    <cmd-new-event> | <cmd-new-meeting> | <cmd-next-email-message> |
+    <cmd-next-item> | <cmd-next-unread-email-message> | <cmd-open-computer> |
+    <cmd-open-control-panel> | <cmd-open-documents> | <cmd-open-downloads> |
+    <cmd-open-music> | <cmd-open-pictures> | <cmd-open> | <cmd-page-down> |
+    <cmd-page-up> | <cmd-paste> | <cmd-pause> | <cmd-play> |
+    <cmd-prev-email-message> | <cmd-prev-item> |
+    <cmd-prev-unread-email-message> | <cmd-print-preview> | <cmd-print> |
+    <cmd-redo> | <cmd-reply-all> | <cmd-reply> | <cmd-restore-all-windows> |
+    <cmd-restore-maximized-window> | <cmd-resume> | <cmd-right-alignment> |
+    <cmd-right> | <cmd-run-editor-app> | <cmd-run-email-app> |
+    <cmd-run-explorer> | <cmd-run-presentation-app> |
+    <cmd-run-spreadsheet-app> | <cmd-run-vlc-player> | <cmd-save-as> |
+    <cmd-save> | <cmd-select-all> | <cmd-send> | <cmd-show-address-book> |
+    <cmd-show-calendar> | <cmd-show-commands> | <cmd-show-contacts> |
+    <cmd-show-day-view> | <cmd-show-desktop> | <cmd-show-editor-app> |
+    <cmd-show-email-app> | <cmd-show-explorer> | <cmd-show-inbox> |
+    <cmd-show-mail> | <cmd-show-month-view> | <cmd-show-presentation-app> |
+    <cmd-show-properties> | <cmd-show-spreadsheet-app> | <cmd-show-today> |
+    <cmd-show-vlc-player> | <cmd-show-week-view> | <cmd-shrink-font> |
+    <cmd-shut-down> | <cmd-sleep-mode> | <cmd-start-app-10> |
+    <cmd-start-app-11> | <cmd-start-app-12> | <cmd-start-app-13> |
+    <cmd-start-app-14> | <cmd-start-app-15> | <cmd-start-app-1> |
+    <cmd-start-app-2> | <cmd-start-app-3> | <cmd-start-app-4> |
+    <cmd-start-app-5> | <cmd-start-app-6> | <cmd-start-app-7> |
+    <cmd-start-app-8> | <cmd-start-app-9> | <cmd-stop> | <cmd-toggle-bold> |
+    <cmd-toggle-italic> | <cmd-toggle-mute> | <cmd-toggle-underline> |
+    <cmd-undo> | <cmd-up-to-folder> | <cmd-up> | <cmd-volume-down> |
+    <cmd-volume-up>;

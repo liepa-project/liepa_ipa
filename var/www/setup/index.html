@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <script type="text/javascript">
+         window.onload = function() {
+            var url = encodeURIComponent(window.location.href);
+            if (window.location.protocol === "file:") {
+               uri = "https://localhost:9000";
+               //wsuri = "ws://localhost:9000";
+            } else {
+               uri = "https://" + window.location.hostname + ":9000";
+            }
+            document.getElementById('wslink').href = uri + "?after=2&redirect=" + url;
+         }
+      </script>
+   </head>
+   <body>
+      <h1>Liepa „Šaknis“ certificate setup</h1>
+      <p>
+         To install the WebSocket server certificate:
+      </p>
+      <ul>
+         <li>Go to the <a href="#" id="wslink">server status page</a> and accept the certificate</li>
+         <li>Manually install the <a href="/cert/liepa-root.crt">certificate</a></li>
+      </ul>
+      <p>
+         Then <a href="/demo/wss_echo.html">start the echo client</a>, which
+         connects to the WebSocket endpoint via secure WS.
+      </p>
+   </body>
+</html>

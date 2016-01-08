@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <script type="text/javascript">
+         var sock = null;
+         var ellog = null;
+         var path = "/echo";
+         window.onload = function() {
+
+            var wsuri;
+            ellog = document.getElementById('log');
+            if (window.location.protocol === "file:") {
+               wsuri = "wss://localhost:9000" + path;
+               //wsuri = "ws://localhost:9000";
+            } else {
+               wsuri = "wss://" + window.location.hostname + ":9000" + path;
+            }
+
+            if ("WebSocket" in window) {
+               sock = new WebSocket(wsuri);
+            } else if ("MozWebSocket" in window) {
+               sock = new MozWebSocket(wsuri);
+            } else {
+               log("Browser does not support WebSocket!");
+               window.location = "http://autobahn.ws/unsupportedbrowser";
+            }
+
+            if (sock) {
+               sock.onopen = function() {
+                  log("Connected to " + wsuri);
+               }
+
+               sock.onclose = function(e) {
+                  log("Connection closed (wasClean = " + e.wasClean + ", code = " + e.code + ", reason = '" + e.reason + "')");
+               }
+
+               sock.onmessage = function(e) {
+                  log("Got echo: " + escHTML(e.data));
+               }
+            }
+         };
+
+         function send() {
+            var msg = document.getElementById('message').value;
+            var batchsize = parseInt(document.getElementById('batch').value);
+            if (sock) {
+               for (var i = 0; i < batchsize; ++i) {
+                  sock.send(msg);
+               }
+               log("Sent " + batchsize + "x : " + msg);
+            } else {
+               log("Not connected.");
+            }
+         };
+
+         function log(m) {
+            document.getElementById('log').innerHTML += m + '\n';
+         };
+
+         function escHTML(data) {
+             var tmp = document.createElement("div");
+             tmp.textContent = data;
+             return tmp.innerHTML;
+         };
+
+      </script>
+   </head>
+   <body>
+      <h1>Liepa „Šaknis“ Secure WebSocket Echo Test</h1>
+      <noscript>You must enable JavaScript</noscript>
+      <form>
+         <p>Message: <input id="message" type="text" size="50" maxlength="50" value="Labas, Liepa!"></p>
+         <p>Batchsize:
+            <select id="batch">
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="4">4</option>
+               <option value="8">8</option>
+            </select>
+         </p>
+      </form>
+      <button onclick='send();'>Send Message</button>
+      <pre id="log" style="height: 20em; overflow-y: scroll; background-color: #faa;"></pre>
+   </body>
+</html>

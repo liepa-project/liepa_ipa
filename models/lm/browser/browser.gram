@@ -1,0 +1,794 @@
+﻿#JSGF V1.0 UTF-8;
+
+/*
+ *
+ * Naršytuvo paslaugos JSGF gramatika, (C) MII, APS, Liepa 2014
+ *
+ * Terminų/žodžių šaltiniai:
+ *
+ *   - Anglų–lietuvių kalbų kompiuterijos žodynėlis;
+ *     (http://ims.mii.lt/ALK%C5%BD/)
+ *
+ *   - Microsoft terminologija;
+ *     (https://www.microsoft.com/Language/en-US/Default.aspx)
+ *
+ *   - Mozilla Firefox, Google Chrome terminai, lokalizavimo tekstai.
+ *
+ * Santrumpos: ff — Firefox, gc — Google Chrome, ms — Microsoft
+ *
+ * Funkcijų komentaruose, {{}} skiausteliuose įrašyti funkcijos Nr. iš 
+ * specifikacijos lentelės „Balsu valdomų paslaugos funkcijų sąrašas“ ir 
+ * funkcijos html id specifikacijos dokumente:
+ * https://liepa/redmine/projects/liepa/wiki/Paslaug%C5%B3_reikalavimai_%28pirkimo_dokumentai_technin%C4%97_specifikacija%29
+ *
+ */
+ 
+grammar browser;
+
+import <numerals.*>;
+
+<t-num> = 
+	<numerals.t-cnum-gm-cn:1> | <numerals.t-cnum-gm-cn:2-9>;
+
+// nuorodų adresaciją mažinam iki 100
+//<t-number> = <t-num> [(nulis | <t-num>) [nulis | <t-num>]];
+<t-number> = <t-num> [(nulis | <t-num>)];
+
+<t-num:1-5> = <numerals.t-cnum-gm-cn:1> | <numerals.t-cnum-gm-cn:2-5>;
+
+<t-num:1-10> = <numerals.t-cnum-gm-cn:1-9> | <numerals.t-num:10>;
+
+<t-num:1-19> = <t-num:1-10> | <numerals.t-num:11-19>;
+
+<t-num-tens> = <numerals.t-num:10> | <numerals.t-num:20-90>;
+
+<t-n-times> = 
+	<numerals.t-cnum-gm-ca:2-9> kartus | 
+	<numerals.t-num:10> kartų;
+
+<t-n-pages> = 
+	<numerals.t-cnum-gm-ca:2-9> puslapius | 
+	<numerals.t-num:10> puslapių;
+
+
+// -c{x} linksniai (case nominative, genitive, accusative, locative, kt.)
+
+<t-tab-gf-cn> = kortelė;
+<t-tab-gf-ca> = kortelę;
+<t-tab-gf-cl> = kortelėje;
+
+<t-tab-cn> = <t-tab-gf-cn>;
+<t-tab-ca> = <t-tab-gf-ca>;
+
+// Ko gero pakaks ir iki dešimties
+/*
+<t-nth-tab-cn> = 
+	(<numerals.t-onum-gf-cn:2-9> | <numerals.t-onum-gf-cn:10> | 
+	<numerals.t-onum-gf-cn:11-19>) <t-tab-gf-cn>;
+
+<t-nth-tab-ca> = 
+	(<numerals.t-onum-ca:2-9> | 
+	<numerals.t-onum-ca:10> | <numerals.t-onum-ca:11-19>) <t-tab-ca>;
+*/
+
+<t-nth-tab-cn> = <numerals.t-onum-gf-cn:1-9> <t-tab-gf-cn>;
+<t-nth-tab-ca> = <numerals.t-onum-ca:1-9> <t-tab-ca>;
+
+
+<t-link-gm-cn> = saitas;
+<t-link-gm-ca> = saitą;
+<t-links-gm-cg> = saitų;
+<t-links-gm-ca> = saitus;
+
+<t-link-cn> = <t-link-gm-cn>;
+<t-link-ca> = <t-link-gm-ca>;
+<t-links-cg> = <t-links-gm-cg>;
+
+<t-open> = atverk;
+<t-close> = užverk;
+<t-save> = įrašyk;
+<t-delete> = pašalink;
+
+<t-webpage-cn> = tinklalapis;
+<t-webpage-cg> = tinklalapio;
+<t-webpage-ca> = tinklalapį;
+
+
+/******************************************
+ * Bendrosios teksto redagavimo komandos  *
+ ******************************************/
+
+/** 1.
+ * Kopijuoti pažymėtą tekstą/objektą į iškarpinę
+ * {{funkc. Nr. 36; id: s5_2_func_36}}
+ */
+<cmd-copy> = kopijuok [tekstą];
+
+/** 2.
+ * Iškirpti pažymėtą tekstą/objektą
+ * {{funkc. Nr. 37; id: s5_2_func_37}}
+ */
+<cmd-cut> = iškirpk [tekstą];
+
+/** 3.
+ * Įterpti iškarpinės turinio kopiją
+ * {{funkc. Nr. 38; id: s5_2_func_38}}
+ */
+<cmd-paste> = (įdėk | įklijuok)  [tekstą]; 
+
+
+/** 4.
+ * Pažymėti viską (Ctrl+A)
+ * {{funkc. Nr. 39; id: s5_2_func_39}}
+ */
+<cmd-select-all> = pažymėk viską;
+
+
+/** 5.
+ * Pašalinti pažymėtą tekstą
+ * {{funkc. Nr. 40; id: s5_2_func_40}}
+ */
+<cmd-delete> = <t-delete>;
+
+/** 6.
+ * Atšaukti paskutinį veiksmą (Undo)
+ * {{funkc. Nr. 41; id: s5_2_func_41}}
+ */
+<cmd-undo> = atšauk [veiksmą];
+
+/** 7.
+ * Grąžinti paskutinį veiksmą (Redo)
+ * {{funkc. Nr. 42; id: s5_2_func_42}}
+ */
+<cmd-redo> = (atstatyk | grąžink) [veiksmą];
+
+
+
+/******************************************
+ * Judėjimas/slinkimas                    *
+ ******************************************/
+
+/*
+  Taip pat ir šios ekrano valdymo funkcijos/komandos:
+  (jų išskirti nereikia, nes jos valdomos rodyklių ir kt. mygtukais)
+ 
+  - Tinklalapio turinio slinkimas aukštyn/žemyn (slinkimas per keletą eilučių);
+    (atitinka vieną pelės ratuko žingsnį)
+  - Tinklalapio turinio slinkimas į kairę/dešinę;
+  - Tinklalapio turinio slinkimas puslapiu aukštyn/žemyn;
+  - Pereiti į tinklalapio (puslapio) pradžią/pabaigą;
+*/
+
+<t-move-1> = eik;
+<t-move-2> = paeik;
+<t-move-3> = slink;
+<t-move-4> = paslink;
+<t-move-5> = pereik;
+<t-move-6> = perkelk;
+<t-move-7> = pastumk;
+
+<t-cmove> = <t-move-1> | <t-move-3>;
+
+/** 8.
+ * Judėjimas aukštyn
+ * {{funkc. Nr. 5, 15; id: s5_2_func_5, s5_2_func_15}}
+ */
+<cmd-move-up-n> = [<t-cmove>] aukštyn [<t-n-times>];
+
+/** 9.
+ * Judėjimas žemyn
+ * {{funkc. Nr. 6, 16; id: s5_2_func_6, s5_2_func_16}
+ */
+<cmd-move-down-n> = [<t-cmove>] žemyn [<t-n-times>];
+
+/** 10.
+ * Judėjimas į kairę
+ * {{funkc. Nr. 7, 17; id: s5_2_func_7, s5_2_func_17}}
+ */
+<cmd-move-left-n> = [<t-cmove>] (kairėn | į kairę) [<t-n-times>];
+
+/** 11.
+ * Judėjimas į dešinę
+ * {{funkc. Nr. 8, 18; id: s5_2_func_8, s5_2_func_18}}
+ */
+<cmd-move-right-n> = [<t-cmove>] (dešinėn | į dešinę) [<t-n-times>];
+
+/** 12.
+ * Judėjimas į pradžią/viršų
+ * {{funkc. Nr. 9, 22; id: s5_2_func_9, s5_2_func_22}}
+ */
+<cmd-move-home> = [<t-move-5>] į pradžią;
+ 
+/** 13.
+ * Judėjimas į pabaigą/galą
+ * {{funkc. Nr. 10, 21; id: s5_2_func_10, s5_2_func_21}}
+ */
+<cmd-move-end> = [<t-move-5>] į pabaigą;
+ 
+
+/** 14.
+ * Ankstesnis puslapis
+ * {{funkc. Nr. 19; id: s5_2_func_19}}
+ */
+<cmd-move-page-up> = ankstesnis puslapis; 
+
+
+/** 15.
+ * Tolesnis puslapis
+ * {{funkc. Nr. 20; id: s5_2_func_20}}
+ */
+<cmd-move-page-down> = tolesnis puslapis;
+
+
+/** 16.
+ * Tolesnis formos/puslapio laukas, elementas (Tab)
+ * {{NAUJA}}
+ */
+<cmd-move-next-item-n> = 
+	(<t-move-5> (pirmyn | į (tolesnį | kitą) (lauką | elementą))) |
+	((tolesnis | kitas)  (laukas | elementas)) |
+	(<t-move-5> pirmyn <t-n-times>); 
+
+/** 17.
+ * Ankstesnis formos/puslapio laukas, elementas (Shift+Tab)
+ * {{NAUJA}}
+ */
+<cmd-move-prev-item-n> = 
+	(<t-move-5> (atgal | į ankstesnį (lauką | elementą))) |
+	(ankstenis (laukas | elementas)) |
+	(<t-move-5> atgal <t-n-times>); 
+
+
+/******************************************
+ * Kortelių komandos                      * 
+ ******************************************/
+
+/** 18.
+ * Atverti naują kortelę
+ * {{funkc. Nr. 11; id: s5_2_func_11}}
+ */
+<cmd-tab-new> = 
+	<t-open> [naują] <t-tab-ca> | nauja <t-tab-gf-cn>;
+
+/** 19.
+ * Užverti aktyvią kortelę
+ * {{funkc. Nr. 12; id: s5_2_func_12}}
+ */
+<cmd-tab-close> = <t-close> <t-tab-ca>;
+
+
+/** 20.
+ * Pereiti į tolesnę/kitą (dešinėje) kortelę
+ * {{funkc. Nr. 13; id: s5_2_func_13}}
+ */
+<cmd-tab-next> = 
+	[pereik] į tolesnę <t-tab-gf-ca> | 
+	tolesnė <t-tab-gf-cn>;
+
+/** 21.
+ * Pereiti į ankstesnę kortelę
+ * {{funkc. Nr. 14; id: s5_2_func_14}}
+ */
+<cmd-tab-prev> = 
+	[pereik] į ankstesnę <t-tab-gf-ca> | 
+	ankstesnė <t-tab-gf-cn>;
+
+/** 22.
+ * Pereiti į N'tą kortelę
+ * {{NAUJA}}
+ */
+<cmd-tab-nth> = 
+	[pereik] į <t-nth-tab-ca> | <t-nth-tab-cn>; 
+
+/** 23.
+ * Pereiti į pirmą kortelę
+ * {{NAUJA}}
+ */
+<cmd-tab-first> = 
+	[pereik] į pradžios <t-tab-ca> |
+	pradžios <t-tab-cn>;
+
+/** 24.
+ * Pereiti į paskiausią kortelę
+ * {{NAUJA}}
+ */
+<cmd-tab-last> = 
+	[pereik] į galinę <t-tab-ca> |
+	galinė <t-tab-gf-cn>;
+
+
+/** 25.
+ * Užverti visas kitas korteles išskyrus šią/aktyvią
+ * {{NAUJA}}
+ */
+<cmd-tab-close-all-other> = 
+	<t-close> kitas korteles;
+
+/** 26.
+ * Atšaukti kortelės užvėrimą; atverti paskiausiai užvertą kortelę
+ * {{NAUJA}}
+ */
+<cmd-tab-close-undo> = grąžink kortelę;
+
+
+
+/******************************************
+ * Nuorodų žymėjimas ir valdymas          *
+ ******************************************/
+
+/*
+  Sužymėjimas reiškia tinklalapio nuorodų grafinį išskyrimą paryškinant, 
+  apvedant kontūru ir/ar kitaip išskiriant ir priskiriant joms ir 
+  pavaizduojant greta simbolinį/skaitinį nuorodos kodą.
+*/
+
+/** 27.
+ * Atverti N'tąją nuorodą
+ * {{funkc. Nr. 46; id: s5_2_func_46}}
+ */
+<cmd-link-open-n> = 
+	<t-open> <t-link-ca> <t-number>;
+
+/** 28.
+ * Atverti N'tąją nuorodą naujame lange
+ * {{funkc. Nr. 48; id: s5_2_func_48}}
+ */
+<cmd-link-open-in-new-window-n> = 
+	<t-open> <t-link-ca> <t-number> (naujame | kitame) lange;
+
+/** 29.
+ * Atverti N'tąją nuorodą naujoje kortelėje
+ * {{funkc. Nr. 47; id: s5_2_func_47}}
+ */
+<cmd-link-open-in-new-tab-n> = 
+	<t-open> <t-link-ca> <t-number> (naujoje | kitoje) <t-tab-gf-cl>;
+
+/** 30.
+ * Sužymėti visas tinklalapio nuorodas
+ * {{funkc. Nr. 43; id: s5_2_func_43}}
+ */
+<cmd-links-mark-all> = 
+	sužymėk visus [<t-webpage-cg>] <t-links-gm-ca>;
+
+
+/** 31.
+ * Sužymėti visas ekrano srityje matomas nuorodas.
+ *
+ * TODO, XXX: neaišku ar įmanoma nustatyti, kurios nuorodos yra matomos ekrane.
+ * {{funkc. Nr. 44; id: s5_2_func_44}}
+ */
+<cmd-links-mark-visible> = 
+	sužymėk [ekrane] matomus <t-links-gm-ca>;
+
+/*
+  Sužymėti N ankstesnių/tolesnių nuorodų, ankstesnį/tolesnį nuorodų bloką 
+  (tam tikrą nuorodų kiekį).
+ 
+  Jei tik apskritai nuorodos gali būti žymimos nuosekliai ir blokais, t.y. 
+  jei įmanoma patikimiau žinoti pozicinį nuorodų nuoseklumą (kuri nuoroda 
+  ekrane seka po kurios) ir tokiu būdų jas nuosekliai sužymėti. 
+  Žinant turinio _struktūrą_, hierarchiją, tai taip: aiškiai ir nesunkiai 
+  atrenkamos nuorodos, kurios priklauso tam tikram html'o elementui 
+  (paragrafui, div ir kt.), t.y. galima jas nuosekliai sužymėti ir sudaryti 
+  daugmaž nuoseklius, logiškus jų blokus. Tačiau universaliai, t.y. nežinant 
+  turinio struktūros, tik skaitant DOM'ą? Žiūrint į FF add-on'ą (mouseless 
+  browsing), tai VARGIAI, nes, priklausomai nuo tinklalapio struktūros, 
+  nuorodoms suteikiami numeriai padrikokai (nenuosekliai) išsidėstę ekrane 
+  pozicine prasme. 
+  Taigi, šios komandos gali būti praktiškai nerealizuojamos (tiksliau: 
+  rezultatas — kokybiškai prastas ir praktiškai neturintis prasmės). 
+  TODO, XXX: pasiaiškinti, nuspręsti dėl tikslingumo. Gali būti visai 
+  tikslinga gana paprastos, nuoseklios struktūros (be daugybės atskirų blokų)
+  tinklalapiuose, kuomet sužymėtos nuorodos ekrane išsidėsto/seka gana 
+  nuosekliai.
+*/
+
+/** 32.
+ * Sužymėti kitą, tolesnių nuorodų bloką.
+ * {{NAUJA}} 
+ *
+ * atsisakyta, tačiau gali prireikti
+ */
+//public <cmd-links-mark-next-block> =
+//	tolesnis [<t-links-cg>] blokas;
+
+/** 33.
+ * Sužymėti kitą, ankstesnių nuorodų bloką.
+ * {{NAUJA}}
+ *
+ * atsisakyta, tačiau gali prireikti
+ */
+//public <cmd-links-mark-prev-block> =
+//	ankstesnis [<t-links-cg>] blokas;
+
+
+/** 34.
+ * Panaikinti/išjungti nuorodų žymėjimą
+ * {{funkc. Nr. 45; id: s5_2_func_45}}
+ */
+<cmd-links-unmark> = 
+	išjunk <t-links-cg> žymėjimą;
+
+
+/******************************************
+ * Kitos naršyklės komandos               * 
+ ******************************************/
+
+/** 35.
+ * Atverti naują naršyklės langą
+ * {{funkc. Nr. 1; id: s5_2_func_1}}
+ */
+<cmd-window-new> = (<t-open> [naują] langą) | naujas langas;
+
+/** 36.
+ * Užverti naršyklės langą
+ * {{funkc. Nr. 2; id: s5_2_func_2}}
+ */
+<cmd-window-close> = <t-close> langą;
+
+
+/** 37.
+ * Grįžti į ankstesnį tinklalapį
+ * {{funkc. Nr. 23; id: s5_2_func_23}}
+ */
+<cmd-page-back> = 
+	tinklalapiu atgal | grįžk atgal | ankstesnis <t-webpage-cn>;
+
+/** 38.
+ * Pereiti į vėlesnį tinklalapį
+ * {{funkc. Nr. 24; id: s5_2_func_24}}
+ */
+<cmd-page-forward> = 
+	tinklalapiu (toliau | pirmyn) | 
+	(tolesnis | vėlesnis) <t-webpage-cn>;
+
+/** 39.
+ * Atverti numatytąjį naršyklės tinklalapį
+ * {{funkc. Nr. 25; id: s5_2_func_25}}
+ */
+<cmd-homepage> = 
+	<t-open> pradžios <t-webpage-ca> | pradžios <t-webpage-cn>;
+
+/** 40.
+ * Atverti numatytąjį paieškos tinklalapį
+ * {{funkc. Nr. 26; id: s5_2_func_26}}, atsisakyta
+ */
+//public <cmd-searchpage> = 
+//	<t-open> paieškos <t-webpage-ca> | 
+//	paieškos <t-webpage-cn>;
+
+
+/** 41.
+ * Perkrauti tinklalapį
+ * {{funkc. Nr. 27; id: s5_2_func_27}}
+ */
+<cmd-reload> = 
+	(atsiųsk [<t-webpage-ca>] iš naujo) |
+	perkrauk {xxx} <t-webpage-ca>;
+
+/** 42.
+ * Sustabdyti tinklalapio krovimą
+ * {{funkc. Nr. 28; id: s5_2_func_28}}	
+ */
+<cmd-stop> = 
+	stabdyk [atsiuntimą] | stop;
+
+/** 43.
+ * Pereiti į adresų juostą (Ctrl+L, Alt+D)
+ * {{funkc. Nr. 29; id: s5_2_func_29}}
+ */
+<cmd-location-bar> = 
+	[pereik] į adreso juostą | 
+	adreso juosta | adresas;
+
+/** 44.
+ * Turinio mastelio didinimas
+ * {{funkc. Nr. 30; id: s5_2_func_30}}	
+ */
+<cmd-zoom-in> = 
+	padidink [vaizdą | mastelį];
+
+/** 45.
+ * Turinio mastelio mažinimas
+ * {{funkc. Nr. 31; id: s5_2_func_31}}
+ */
+<cmd-zoom-out> = 
+	sumažink [vaizdą | mastelį];
+
+/** 46.
+ * Originalus turinio mastelis
+ * {{funkc. Nr. 32; id: s5_2_func_32}}
+ */
+<cmd-zoom-orig> = 
+	atkurk mastelį | 
+	originalus (mastelis | vaizdas);
+
+/** 47.
+ * Rodymo visame ekrane režimas
+ * {{funkc. Nr. 33; id: s5_2_func_33}}
+ */
+<cmd-full-screen> = 
+	rodyk visame ekrane | visas ekranas;
+
+
+/** 48.
+ * Grįžti iš viso ekrano; įprastas vaizdas
+ * {{NAUJA}}
+ */
+<cmd-full-screen-off> = 
+	(grįžk iš viso ekrano) | išjunk visą ekraną |
+	(normalus | įprastas)  ekranas; 
+
+/** 49.
+ * Įrašyti tinklalapį
+ * (išsaugoti atvertą tinklalapį pasirinktu formatu)
+ * {{funkc. Nr. 35; id: s5_2_func_35}}
+ */
+<cmd-save-page> = <t-save> <t-webpage-ca>;
+
+
+/** 50.
+ * Spausdinti tinklalapio turinį
+ * {{funkc. Nr. 34; id: s5_2_func_34}}
+ */
+<cmd-print> = (spausdink) [<t-webpage-ca>]; 
+
+
+/** 51.
+ * Išvalyti naršymo duomenis
+ * {{NAUJA}}
+ */
+<cmd-browser-clear-data> = išvalyk asmeninius duomenis;
+
+/** 52.
+ * Atverti naudotojo numatytą tinklalapį N (iki 20)
+ * {{NAUJA}} 
+ *
+ * atisakyta paliekant <cmd-page-custom-theme-x-n>
+ */
+//public <cmd-page-custom-n> = mano tinklalapis <t-num:1-19>;
+
+
+/** 53.
+ * Atverti numatytą tinklalapį iš apibrėžtos temos/kategorijos 
+ * (orai, sportas, žinios ir pan.). Temų/kategorijų iki 15.
+ *
+ * {{NAUJA}}
+ */
+<cmd-custom-page-theme-1> = orai; 
+<cmd-custom-page-theme-2> = naujienos;
+<cmd-custom-page-theme-3> = sportas;
+<cmd-custom-page-theme-4> = muzika;  
+<cmd-custom-page-theme-5> = renginiai;
+<cmd-custom-page-theme-6> = receptai;
+<cmd-custom-page-theme-7> = mokslas;
+<cmd-custom-page-theme-8> = televizija;
+<cmd-custom-page-theme-9> = filmai;
+<cmd-custom-page-theme-10> = knygos;
+<cmd-custom-page-theme-11> = mano tinklalapis;
+<cmd-custom-page-theme-12> = teatras;
+<cmd-custom-page-theme-13> = sveikata;
+<cmd-custom-page-theme-14> = horoskopai;
+<cmd-custom-page-theme-15> = vertėjas;
+<cmd-custom-page-theme-16> = 
+	paieška | <t-open> paieškos <t-webpage-ca> | paieškos <t-webpage-cn>;
+
+
+/******************************************
+ * Teksto paieška                         *
+ ******************************************/
+
+/** 54.
+ * Ieškoti teksto (iššaukti paieškos dialogą)
+ * {{NAUJA}}
+ */
+<cmd-text-search> = ieškok teksto;
+
+/** 55.
+ * Ieškoti tolesnio teksto fragmento
+ * {{NAUJA}}
+ */
+<cmd-text-search-next> = 
+	(tolesnis [teksto] fragmentas) |
+	ieškok kito;
+
+/** 56.
+ * Ieškoti ankstesnio teksto fragmento
+ * {{NAUJA}}
+ */
+<cmd-text-search-prev> = 
+	(ankstesnis [teksto] fragmentas) |
+	ieškok ankstesnio;
+
+
+/******************************************
+ * Meniu komandos                         *
+ ******************************************/
+
+/** 57.
+ * Aktyvuoti naršyklės pagrindinį meniu 
+ * (Chrome, nes FF aktyvuojamas konkretus meniu)
+ * {{funkc. Nr. 3; id: s5_2_func_3}}
+ */
+<cmd-menu-gc-main> = 
+	pagrindinis meniu;
+
+
+/** 58.
+ * Iššaukti kontekstinį meniu
+ * {{funkc. Nr. 4; id: s5_2_func_4}}
+ */
+<cmd-menu-context> = 
+	(kontekstinis | vietinis) meniu;
+
+
+/******************************************
+ * Dialogo valdymas                       *
+ ******************************************/
+
+/** 59.
+ * Funkcija dialogui ar siūlomam veiksmui atšaukti (paprastai Esc)
+ * {{NAUJA}}
+ */
+<cmd-dlg-cancel> = 
+	atsisakyk | nutrauk;
+
+
+/** 60
+ * Funkcija siūlomam veiksmui patvirtinti (paprastai Enter)
+ * {{NAUJA}}
+ */
+<cmd-dlg-confirm> = 
+	patvirtinu | sutinku;
+
+/** 61.
+ * Funkcija siūlomam veiksmo alternatyvai patvirtinti/pasirinkti
+ * {{NAUJA}}, atsisakyta
+ */
+//public <cmd-dlg-confirm-alt> = 
+//	pasirink (kitą | alternatyvą);
+
+
+
+/******************************************
+ * Adresyno komandos                      *
+ ******************************************/
+
+/** 62.
+ * Atverti adresyną
+ * {{funkc. Nr. 49; id: s5_2_func_49}}
+ */
+<cmd-bm-manager> = 
+	<t-open> adresyną | adresynas;
+
+/** 63.
+ * Įrašyti esamo tinklapio adresą į adresyną
+ * {{funkc. Nr. 50; id: s5_2_func_50}}
+ */
+<cmd-bm-add-page> = 
+	(<t-save> | įtrauk) į adresyną | 
+	<t-save> [<t-webpage-cg>] adresą;
+
+
+/** --.
+ * Įrašyti pažymėtos (N'tosios) nuorodos adresą į adresyną
+ * (netikslinga realizuoti; verta pamiršti/pašalinti) 
+ * {{funkc. Nr. 51; id: s5_2_func_5}}
+ */
+//public <cmd-bm-add-link-n = <VOID>;
+
+
+
+/** 64.
+ * Atverti N'tąją adresyno nuorodą
+ * (sutampa su <cmd-link-open-n>)
+ * {{NAUJA}}
+ */
+//public <cmd-bm-n-open> = <cmd-link-open-n>;
+
+/** 65.
+ * Atverti N'tąją adresyno nuorodą naujoje kortelėje
+ * (sutampa su <cmd-link-open-in-new-tab-n>)
+ * {{NAUJA}}
+ */
+//public <cmd-bm-n-open-in-new-tab> = <cmd-link-open-in-new-tab-n>;
+
+/** 66.
+ * Atverti N'tąją adresyno nuorodą naujame lange
+ * (sutampa su <cmd-link-open-in-new-window-n>)
+ * {{NAUJA}}
+ */
+//public <cmd-bm-n-open-in-new-window> = <cmd-link-open-in-new-window-n>;
+
+
+/******************************************
+ * Naršymo istorija                       *
+ ******************************************/
+
+/** 67.
+ * Atverti naršymo istorijos langą/žurnalą
+ * {{NAUJA, eil. nr: 80}}
+ */
+<cmd-hist-manager> = (naršymo žurnalas) | (atverk [naršymo] žurnalą);
+
+/** 68.
+ * Atverti N'tąją nuorodą
+ * (sutampa su <cmd-link-open-n>)
+ * {{NAUJA}}
+ */
+//public <cmd-hist-n-open> = <cmd-link-open-n>;
+
+/** 69.
+ * Atverti N'tąją nuorodą naujoje kortelėje
+ * (sutampa su <cmd-link-open-in-new-tab-n>)
+ * {{NAUJA}}
+ */
+//public <cmd-hist-n-open-in-new-tab> = <cmd-link-open-in-new-tab-n>;
+
+/** 70.
+ * Atverti N'tąją nuorodą naujame lange
+ * (sutampa su <cmd-link-open-in-new-window-n>)
+ * {{NAUJA}}
+ */
+//public <cmd-hist-n-open-in-new-window> = <cmd-link-open-in-new-window-n>;
+
+
+/** 71.
+ * Pašalinti visus naršymo žurnalo įrašus
+ * {{NAUJA}}
+ */
+<cmd-hist-clear-all> = išvalyk [naršymo] žurnalą;
+
+
+/******************************************
+ * Siuntinių langas                       *
+ ******************************************/
+
+/** 72.
+ * Atverti siuntinių langą/žurnalą
+ * {{NAUJA}}
+ */
+<cmd-down-manager> = 
+	atverk atsiuntimų žurnalą | atsiuntimų žurnalas;
+
+/** 73.
+ * Atverti siuntinių aplanką
+ * {{NAUJA}}, atsisakyta
+ */
+//public <cmd-down-open-folder> = 
+//	atverk atsiuntimų aplanką | atsiuntimų aplankas;
+
+
+
+
+
+
+
+
+public <all-commands> =
+    <cmd-bm-add-page> | <cmd-bm-manager> | <cmd-browser-clear-data> |
+    <cmd-copy> | <cmd-custom-page-theme-10> | <cmd-custom-page-theme-11> |
+    <cmd-custom-page-theme-12> | <cmd-custom-page-theme-13> |
+    <cmd-custom-page-theme-14> | <cmd-custom-page-theme-15> |
+    <cmd-custom-page-theme-16> | <cmd-custom-page-theme-1> |
+    <cmd-custom-page-theme-2> | <cmd-custom-page-theme-3> |
+    <cmd-custom-page-theme-4> | <cmd-custom-page-theme-5> |
+    <cmd-custom-page-theme-6> | <cmd-custom-page-theme-7> |
+    <cmd-custom-page-theme-8> | <cmd-custom-page-theme-9> | <cmd-cut> |
+    <cmd-delete> | <cmd-dlg-cancel> | <cmd-dlg-confirm> | <cmd-down-manager> |
+    <cmd-full-screen-off> | <cmd-full-screen> | <cmd-hist-clear-all> |
+    <cmd-hist-manager> | <cmd-homepage> | <cmd-link-open-in-new-tab-n> |
+    <cmd-link-open-in-new-window-n> | <cmd-link-open-n> | <cmd-links-mark-all>
+    | <cmd-links-mark-visible> | <cmd-links-unmark> | <cmd-location-bar> |
+    <cmd-menu-context> | <cmd-menu-gc-main> | <cmd-move-down-n> |
+    <cmd-move-end> | <cmd-move-home> | <cmd-move-left-n> |
+    <cmd-move-next-item-n> | <cmd-move-page-down> | <cmd-move-page-up> |
+    <cmd-move-prev-item-n> | <cmd-move-right-n> | <cmd-move-up-n> |
+    <cmd-page-back> | <cmd-page-forward> | <cmd-paste> | <cmd-print> |
+    <cmd-redo> | <cmd-reload> | <cmd-save-page> | <cmd-select-all> |
+    <cmd-stop> | <cmd-tab-close-all-other> | <cmd-tab-close-undo> |
+    <cmd-tab-close> | <cmd-tab-first> | <cmd-tab-last> | <cmd-tab-new> |
+    <cmd-tab-next> | <cmd-tab-nth> | <cmd-tab-prev> | <cmd-text-search-next> |
+    <cmd-text-search-prev> | <cmd-text-search> | <cmd-undo> |
+    <cmd-window-close> | <cmd-window-new> | <cmd-zoom-in> | <cmd-zoom-orig> |
+    <cmd-zoom-out>;

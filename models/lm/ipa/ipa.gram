@@ -1,0 +1,70 @@
+#JSGF V1.0 UTF-8;
+
+/**
+* LIEPA produkto - Interneto Puslapių Atidarymo (IPA) balsu programinės 
+* įrangos - JSGF gramatika. VU MII, 2015.
+*/
+
+grammar ipa;
+<cmd-browser-open> = 
+	internetas | interneto naršyklė | naršyklė |
+	atverk naršyklę | atverk interneto naršyklę |
+	naršyti | naršyti internete;
+<cmd-browser-close> = 
+	užverk | užverk naršyklę |
+	užverk interneto naršyklę | užverk svetainę | užverk tinklalapį;
+<cmd-open-url-news> = 
+	naujienos | rodyk naujienas | naujienų svetainė |
+	atverk naujienas | atverk naujienų svetainę | kokios naujienos | 
+	žinios | rodyk žinias | kas naujo | kas naujo pasaulyje;
+<cmd-open-url-sport> = 
+	sportas | rodyk sportą | sporto naujienos |
+	rodyk sporto naujienas | atverk sporto naujienas |
+	sporto žinios | atverk sporto žinias | sporto svetainė | 
+	atverk sporto svetainę | rodyk rezultatus |
+	kokie rezultatai | sporto rezultatai;
+<cmd-open-url-weather> = 
+	orai | orų prognozė | rodyk orų prognozę |
+	orų naujienos | atverk orų svetainę | atverk orų tinklalapį | kokie orai |
+	rodyk orus | kokie rytoj orai | koks oras | savaitės orai;
+<cmd-open-url-search> = 
+	paieška | paieška internete | atverk paiešką | paieškos svetainė |
+	atverk paieškos svetainę | ieškok | ieškok internete; 
+<cmd-open-url-google> =  
+	gūgl paieška | gūgl ieškok | atverk gūgl | atverk gūgl svetainę;
+<cmd-open-url-bing> =  
+	bing paieška | bing ieškok | atverk bing | atverk bing svetainę;
+<cmd-open-url-yahoo> =  
+	jahū paieška | jahū ieškok | atverk jahū | atverk jahū svetainę;
+<cmd-open-url-social> =  
+	draugai | bendravimas |	draugų skelbimai | draugų pranešimai;
+<cmd-open-url-facebook> =  
+	feisbuk | feisbuk svetainė | atverk feisbuk | atverk feisbuk svetainę;
+<cmd-open-url-twitter> =  
+	tviter | tviter svetainė | atverk tviter | atverk tviter svetainę;
+<cmd-open-url-linkedin> =  
+	linktin | linktin svetainė | atverk linktin | atverk linktin svetainę;
+<cmd-open-url-instagram> =  
+	instagram | instagram svetainė | atverk instagram | atverk instagram svetainę;
+<cmd-open-url-video> =  
+	video | video įrašai | video klipai | 
+	vaizdai | vaizdo įrašai | vaizdo klipai |
+	klipai |  rodyk klipus | rodyk vaizdo įrašus | rodyk video įrašus;
+<cmd-open-url-youtube> =  
+	jūtūb | jūtūb svetainė | atverk jūtūb |	atverk jūtūb svetainę | jūtūb klipai;
+<cmd-open-url-wikipedia> =  
+	vikipedija | vikipedija enciklopedija | vikipedija svetainė |
+	atverk vikipedija | atverk vikipedija svetainę;
+<cmd-open-url-dictionary> =  
+	žodynas | rodyk žodyną | atverk žodyną;
+<cmd-open-url-translate> =  
+	vertimas | vertimo svetainė | atverk vertimo svetainę | išversk | 
+	reikia vertimo | reikia išversti | išversti;
+public <all-commands> =
+    <cmd-browser-close> | <cmd-browser-open> | <cmd-open-url-bing> |
+    <cmd-open-url-dictionary> | <cmd-open-url-facebook> |
+    <cmd-open-url-google> | <cmd-open-url-instagram> | <cmd-open-url-linkedin>
+    | <cmd-open-url-news> | <cmd-open-url-search> | <cmd-open-url-social> |
+    <cmd-open-url-sport> | <cmd-open-url-translate> | <cmd-open-url-twitter> |
+    <cmd-open-url-video> | <cmd-open-url-weather> | <cmd-open-url-wikipedia> |
+    <cmd-open-url-yahoo> | <cmd-open-url-youtube>;

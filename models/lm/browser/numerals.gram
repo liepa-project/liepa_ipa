@@ -1,0 +1,178 @@
+﻿#JSGF V1.0 UTF-8;
+
+/**
+ *
+ * Skaitmenys, skaitvardžiai, (C) MII, APS, Liepa 2014
+ *
+ */
+ 
+grammar numerals;
+
+
+/*--------------------------------------------------------------------------
+ * Kiekiniai (cardinal — cnum) ir kelintiniai (ordinal — onum) skaitvardžiai 
+ *
+ * Giminė: 
+ *   vyr. gim.: gm (gender masculine), 
+ *   mot. gim.: gf (gender feminine).
+ *
+ * Linksnis:
+ *   vardininkas: cn (case nominative)
+ *   galininkas:  ca (case accusative) 
+ *
+ *-------------------------------------------------------------------------*/
+
+// Kiekiniai (cardinal)
+
+// vyr. gim. vardininkas
+<t-cnum-gm-cn:1> = vienas {1};
+<t-cnum-gm-cn:2-5> = du {2} | trys {3} | keturi {4} | penki {5};
+<t-cnum-gm-cn:2-9> = 
+	<t-cnum-gm-cn:2-5> | 
+	šeši {6} | septyni {7} | aštuoni {8} | devyni {9};
+
+<t-cnum-gm-cn:1-9> = <t-cnum-gm-cn:1> | <t-cnum-gm-cn:2-9>; 
+ 
+
+
+// vyr. gim. galininkas
+<t-cnum-gm-ca:1> = vieną {1};
+<t-cnum-gm-ca:2-5> = du {2} | tris {3} | keturis {4} | penkis {5};
+<t-cnum-gm-ca:2-9> = 
+	<t-cnum-gm-ca:2-5> |
+	šešis {6} | septynis {7} | aštuonis {8} | devynis {9};
+
+<t-cnum-gm-ca:1-9> = <t-cnum-gm-ca:1> | <t-cnum-gm-ca:2-9>;
+
+
+/*-------------------------------------------------------------------------*/
+// mot. gim. vardininkas
+<t-cnum-gf-cn:1> = viena {1};
+<t-cnum-gf-cn:2-5> = dvi {2} | trys {3} | keturios {4} | penkios {5};
+<t-cnum-gf-cn:2-9> = 
+	<t-cnum-gf-cn:2-5> |
+	šešios {6} | septynios {7} | aštuonios {8} | devynios {9};
+
+<t-cnum-gf-cn:1-9> = <t-cnum-gf-cn:1> | <t-cnum-gf-cn:2-9>;
+
+// mot. gim. galininkas
+<t-cnum-gf-ca:1> = vieną {1};
+<t-cnum-gf-ca:2-5> =  dvi {2} | tris {3} | keturias {4} | penkias {5}; 
+<t-cnum-gf-ca:2-9> = 
+	<t-cnum-gf-ca:2-5> |
+	šešias {6} | septynias {7} | aštuonias {8} | devynias {9};
+
+<t-cnum-gf-ca:1-9> = <t-cnum-gf-ca:1> | <t-cnum-gf-ca:2-9>;
+
+
+
+/*-------------------------------------------------------------------------*/
+<t-num:11-19> = 
+	vienuolika {11} | dvylika {12} | trylika {13} | keturiolika {14} | 
+	penkiolika {15} | šešiolika {16} | septyniolika {17} | 
+	aštuoniolika {18} | devyniolika {19};
+
+<t-num:10> = dešimt {10};
+<t-num:20-90> = 
+	dvidešimt {20} | trisdešimt {30} | keturiasdešimt {40} | 
+	penkiasdešimt {50} | šešiasdešimt {60} | septyniasdešimt {70} | 
+	aštuoniasdešimt {80} | devyniasdešimt {90};
+
+
+// Kelintiniai (ordinal) skaitvardžiai
+
+/*-------------------------------------------------------------------------*/
+// vyr. gim. vardininkas
+<t-onum-gm-cn:1> = pirmas {1};
+<t-onum-gm-cn:1-5> = 
+	<t-onum-gm-cn:1> |
+	antras {2} | trečias {3} | ketvirtas {4} | penktas {5};
+
+<t-onum-gm-cn:1-9> = 
+	<t-onum-gm-cn:1-5> | 
+	šeštas {6} | septintas {7} | aštuntas {8} | devintas {9};
+
+
+<t-onum-gm-cn:11-19> = 
+	vienuoliktas {11} | dvyliktas {12} | tryliktas {13} | 
+	keturioliktas {14} | penkioliktas {15} | šešioliktas {16} | 
+	septynioliktas {17} | aštuonioliktas {18} | devynioliktas {19};
+
+<t-onum-gm-cn:10> = dešimtas {10};
+<t-onum-gm-cn:20-90> = 
+	dvidešimtas {20} | trisdešimtas {30} | keturiasdešimtas {40} | 
+	penkiasdešimtas {50} | šešiasdešimtas {60} | septyniasdešimtas {70} | 
+	aštuoniasdešimtas {80} | devyniasdešimtas {90};
+/*-------------------------------------------------------------------------*/
+// mot. gim. vardininkas
+<t-onum-gf-cn:1> = pirma {1};
+<t-onum-gf-cn:1-5> = 
+	<t-onum-gf-cn:1> | antra {2} | trečia {3} | ketvirta {4} | penkta {5};
+
+<t-onum-gf-cn:1-9> = 
+	<t-onum-gf-cn:1-5> | 
+	šešta {6} | septinta {7} | aštunta {8} | devinta {9};
+
+<t-onum-gf-cn:11-19> = 
+	vienuolikta {11} | dvylikta {12} | trylikta {13} | 
+	keturiolikta {14} | penkiolikta {15} | šešiolikta {16} | 
+	septyniolikta {17} | aštuoniolikta {18} | devyniolikta {19};
+
+<t-onum-gf-cn:10> = dešimta {10};
+<t-onum-gf-cn:20-90> = 
+	dvidešimta {20} | trisdešimta {30} | keturiasdešimta {40} | 
+	penkiasdešimta {50} | šešiasdešimta {60} | septyniasdešimta {70} | 
+	aštuoniasdešimta {80} | devyniasdešimta {90};
+/*-------------------------------------------------------------------------*/
+// kelintinių galininkas; giminės neturi
+<t-onum-ca:1> = pirmą {1};
+<t-onum-ca:1-5> = 
+	<t-onum-ca:1> | antrą {2} | trečią {3} | ketvirtą {4} | penktą {5};
+
+<t-onum-ca:1-9> = 
+	<t-onum-ca:1-5> | šeštą {6} | septintą {7} | aštuntą {8} | devintą {9};
+
+
+<t-onum-ca:11-19> =
+	vienuoliktą {11} | dvyliktą {12} | tryliktą {13} | 
+	keturioliktą {14} | penkioliktą {15} | šešioliktą {16} | 
+	septynioliktą {17} | aštuonioliktą {18} | devynioliktą {19};
+
+
+<t-onum-ca:10> = dešimtą {10}; 
+<t-onum-ca:20-90> = 
+	dvidešimtą {20} | trisdešimtą {30} | keturiasdešimtą {40} | 
+	penkiasdešimtą {50} | šešiasdešimtą {60} | septyniasdešimtą {70} | 
+	aštuoniasdešimtą {80} | devyniasdešimtą {90};
+
+
+/*-------------------------------------------------------------------------*/
+// Galutiniai (kiekiniai ir kelintiniai) skaičiai (skirt. gim. ir linksnių)
+
+public <t-cnum-gm-cn> = 
+	<t-cnum-gm-cn:1-9> | <t-num:10> | <t-num:11-19> | <t-num:20-90> 
+	[<t-cnum-gm-cn:1-9>];
+
+public <t-cnum-gm-ca> = 
+	<t-cnum-gm-ca:1-9> | <t-num:10> | <t-num:11-19> | <t-num:20-90> 
+	[<t-cnum-gm-ca:1-9>];
+
+public <t-cnum-gf-cn> = 
+	<t-cnum-gf-cn:1-9> | <t-num:10> | <t-num:11-19> | <t-num:20-90> 
+	[<t-cnum-gf-cn:1-9>];
+
+public <t-cnum-gf-ca> = 
+	<t-cnum-gf-ca:1-9> | <t-num:10> | <t-num:11-19> | <t-num:20-90> 
+	[<t-cnum-gf-ca:1-9>];
+
+public <t-onum-gm-cn> = 
+	<t-onum-gm-cn:1-9> | <t-onum-gm-cn:10> | <t-onum-gm-cn:11-19> | 
+	<t-onum-gm-cn:20-90> | <t-num:20-90> <t-onum-gm-cn:1-9>;
+
+public <t-onum-gf-cn> = 
+	<t-onum-gf-cn:1-9> | <t-onum-gf-cn:10> | <t-onum-gf-cn:11-19> | 
+	<t-onum-gf-cn:20-90> | <t-num:20-90> <t-onum-gf-cn:1-9>;
+
+public <t-onum-ca> = 
+	<t-onum-ca:1-9> | <t-onum-ca:10> | <t-onum-ca:11-19> | 
+	<t-onum-ca:20-90> | <t-num:20-90> <t-onum-ca:1-9>;

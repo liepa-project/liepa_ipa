@@ -1,0 +1,266 @@
+﻿phrase;command;cmd-arg
+parodyk tolesnį laišką;cmd-next-email-message;
+tolesnis laiškas;cmd-next-email-message;
+aplankų medis;cmd-folder-tree;
+pereik į aplankų medį;cmd-folder-tree;
+į aplankų medį;cmd-folder-tree;
+parodyk atvertas programas;cmd-apps-switch;
+parodyk veikiančias programas;cmd-apps-switch;
+išjunk programą;cmd-exit;
+užbaik programos darbą;cmd-exit;
+įterpk euro ženklą;cmd-insert-euro-sign;
+parodyk paštą;cmd-show-mail;
+paštas;cmd-show-mail;
+rodyk paštą;cmd-show-mail;
+garsiau;cmd-volume-up;
+padaryk garsiau;cmd-volume-up;
+pažymėk viską;cmd-select-all;
+centrinė lygiuotė;cmd-center-alignment;
+įjunk centrinę lygiuotę;cmd-center-alignment;
+išsiųsk;cmd-send;
+išsiųsk laišką;cmd-send;
+parodyk rašyklę;cmd-show-editor-app;
+įterpk paveikslą;cmd-insert-picture;
+naujas laiškas;cmd-new-email-message;
+sukurk naują laišką;cmd-new-email-message;
+eik į viršaplankį;cmd-up-to-folder;
+viršaplankis;cmd-up-to-folder;
+į viršaplankį;cmd-up-to-folder;
+padaryk tyliau;cmd-volume-down;
+tyliau;cmd-volume-down;
+kairinė lygiuotė;cmd-left-alignment;
+įjunk kairinę lygiuotę;cmd-left-alignment;
+spausdink;cmd-print;
+spausdink dokumentą;cmd-print;
+spausdink laišką;cmd-print;
+paleisk pokalbių programą;cmd-start-app-n;3
+pokalbių programa;cmd-start-app-n;3
+paleisk failų tvarkytuvę;cmd-run-explorer;
+gauti laiškai;cmd-show-inbox;
+parodyk gautus laiškus;cmd-show-inbox;
+persiųsk;cmd-forward-email-message;
+persiųsk laišką;cmd-forward-email-message;
+atsisiuntimai;cmd-open-downloads;
+mano atsisiuntimai;cmd-open-downloads;
+mano siuntos;cmd-open-downloads;
+siuntos;cmd-open-downloads;
+naujas adresatas;cmd-new-contact;
+naujas kontaktas;cmd-new-contact;
+sukurk naują adresatą;cmd-new-contact;
+sukurk naują kontaktą;cmd-new-contact;
+eik toliau;cmd-forward-to-folder;
+toliau;cmd-forward-to-folder;
+paleisk užrašinę;cmd-start-app-n;2
+užrašinė;cmd-start-app-n;2
+mano žaidimas;cmd-start-app-n;10
+paleisk mano žaidimą;cmd-start-app-n;10
+parodyk savybes;cmd-show-properties;
+paleisk pateikčių rengyklę;cmd-run-presentation-app;
+aukštyn;cmd-up;
+eik aukštyn;cmd-up;
+ankstesnis;cmd-prev-item;
+kompiuteris;cmd-open-computer;
+mano kompiuteris;cmd-open-computer;
+eik į pabaigą;cmd-end;
+į pabaigą;cmd-end;
+parodyk komandas;cmd-show-commands;
+eik į pradžią;cmd-home;
+į pradžią;cmd-home;
+parodyk skaičiuoklę;cmd-show-spreadsheet-app;
+išjunk kompiuterį;cmd-shut-down;
+mano muzika;cmd-open-music;
+muzika;cmd-open-music;
+mano antras žaidimas;cmd-start-app-n;11
+paleisk mano antrą žaidimą;cmd-start-app-n;11
+mano nuotraukos;cmd-open-pictures;
+mano paveikslai;cmd-open-pictures;
+nuotraukos;cmd-open-pictures;
+paveikslai;cmd-open-pictures;
+eik kairėn;cmd-left;
+eik į kairę;cmd-left;
+kairėn;cmd-left;
+į kairę;cmd-left;
+ankstesnis neskaitytas laiškas;cmd-prev-unread-email-message;
+parodyk ankstesnį neskaitytą laišką;cmd-prev-unread-email-message;
+gerai;cmd-enter;
+vykdyk;cmd-enter;
+padidink šriftą;cmd-grow-font;
+ankstesnis puslapis;cmd-page-up;
+eik puslapiu aukštyn;cmd-page-up;
+puslapiu aukštyn;cmd-page-up;
+laiškų sąrašas;cmd-email-message-list;
+pereik į laiškų sąrašą;cmd-email-message-list;
+į laiškų sąrašą;cmd-email-message-list;
+įrašyk kitu vardu;cmd-save-as;
+įrašyk kitu vardu dokumentą;cmd-save-as;
+užrakink kompiuterį;cmd-lock-computer;
+stabdyk;cmd-stop;
+stop;cmd-stop;
+išeik iš viso ekrano;cmd-disable-full-screen;
+išjunk visą ekraną;cmd-disable-full-screen;
+atsisakyk;cmd-cancel;
+atšauk;cmd-cancel;
+atsakyk visiems;cmd-reply-all;
+atsakyk visiems į laišką;cmd-reply-all;
+atverk;cmd-open;
+atverk aplanką;cmd-open;
+atverk diską;cmd-open;
+atverk dokumentą;cmd-open;
+atverk failą;cmd-open;
+atverk laišką;cmd-open;
+išjunk garsą;cmd-toggle-mute;
+įjunk garsą;cmd-toggle-mute;
+patikrink paštą;cmd-email-check;
+iškirpk;cmd-cut;
+eik puslapiu žemyn;cmd-page-down;
+puslapiu žemyn;cmd-page-down;
+tolesnis puslapis;cmd-page-down;
+abipusė lygiuotė;cmd-justified-alignment;
+įjunk abipusę lygiuotę;cmd-justified-alignment;
+mano programa;cmd-start-app-n;8
+paleisk mano programą;cmd-start-app-n;8
+užmigdyk kompiuterį;cmd-hibernate;
+dešininė lygiuotė;cmd-right-alignment;
+įjunk dešininę lygiuotę;cmd-right-alignment;
+padidink langą;cmd-maximize-window;
+adresai;cmd-show-address-book;
+adresatai;cmd-show-address-book;
+adresų knyga;cmd-show-address-book;
+parodyk adresatus;cmd-show-address-book;
+parodyk adresus;cmd-show-address-book;
+parodyk adresų knygą;cmd-show-address-book;
+atverk šiukšliadėžę;cmd-start-app-n;13
+atverk šiukšlinę;cmd-start-app-n;13
+šiukšliadėžė;cmd-start-app-n;13
+šiukšlinė;cmd-start-app-n;13
+dokumentai;cmd-open-documents;
+mano dokumentai;cmd-open-documents;
+paleisk leistuvę;cmd-run-vlc-player;
+atverk mano aplanką;cmd-start-app-n;6
+mano aplankas;cmd-start-app-n;6
+suskleisk;cmd-collapse;
+suskleisk elementus;cmd-collapse;
+anuliuok veiksmą;cmd-undo;
+atšauk veiksmą;cmd-undo;
+paleisk skaičiuotuvą;cmd-start-app-n;1
+skaičiuotuvas;cmd-start-app-n;1
+mano antra programa;cmd-start-app-n;9
+paleisk mano antrą programą;cmd-start-app-n;9
+naujas susitikimas;cmd-new-meeting;
+sukurk naują susitikimą;cmd-new-meeting;
+įrašyk;cmd-save;
+įrašyk dokumentą;cmd-save;
+įrašyk laišką;cmd-save;
+kalendorius;cmd-show-calendar;
+parodyk kalendorių;cmd-show-calendar;
+įterpk lentelę;cmd-insert-table;
+ankstesnis elementas;cmd-goto-prev-item;
+ankstesnis laukas;cmd-goto-prev-item;
+pereik į ankstesnį elementą;cmd-goto-prev-item;
+pereik į ankstesnį lauką;cmd-goto-prev-item;
+į ankstesnį elementą;cmd-goto-prev-item;
+į ankstesnį lauką;cmd-goto-prev-item;
+grok;cmd-play;
+parodyk žaidimus;cmd-start-app-n;12
+žaidimai;cmd-start-app-n;12
+parodyk pašto programą;cmd-show-email-app;
+naujas dokumentas;cmd-new-document;
+sukurk naują dokumentą;cmd-new-document;
+atverk mano antrą aplanką;cmd-start-app-n;7
+mano antras aplankas;cmd-start-app-n;7
+pusjuodis;cmd-toggle-bold;
+pabraukimas;cmd-toggle-underline;
+įdėk;cmd-paste;
+įklijuok;cmd-paste;
+naršymo sritis;cmd-goto-navigation-pane;
+pereik į naršymo sritį;cmd-goto-navigation-pane;
+į naršymo sritį;cmd-goto-navigation-pane;
+pauzė;cmd-pause;
+pristabdyk;cmd-pause;
+kursyvas;cmd-toggle-italic;
+išskleisk;cmd-expand;
+išskleisk elementus;cmd-expand;
+tęsk;cmd-resume;
+kontaktai;cmd-show-contacts;
+parodyk kontaktus;cmd-show-contacts;
+dešinėn;cmd-right;
+eik dešinėn;cmd-right;
+eik į dešinę;cmd-right;
+į dešinę;cmd-right;
+parodyk visame ekrane;cmd-enable-full-screen;
+rodyk visame ekrane;cmd-enable-full-screen;
+visas ekranas;cmd-enable-full-screen;
+ankstesnis laiškas;cmd-prev-email-message;
+parodyk ankstesnį laišką;cmd-prev-email-message;
+atsakyk;cmd-reply;
+atsakyk į laišką;cmd-reply;
+parodyk šiandieną;cmd-show-today;
+šiandiena;cmd-show-today;
+failų sąrašas;cmd-goto-file-list;
+pereik į failų sąrašą;cmd-goto-file-list;
+į failų sąrašą;cmd-goto-file-list;
+parodyk dieną;cmd-show-day-view;
+rodyk dieną;cmd-show-day-view;
+eik žemyn;cmd-down;
+žemyn;cmd-down;
+valdymo skydelis;cmd-open-control-panel;
+komandinė eilutė;cmd-start-app-n;4
+paleisk komandinę eilutę;cmd-start-app-n;4
+pašalink;cmd-delete;
+atstatyk veiksmą;cmd-redo;
+grąžink veiksmą;cmd-redo;
+perdaryk veiksmą;cmd-redo;
+išeik iš sistemos;cmd-log-off;
+išeiti iš sistemos;cmd-log-off;
+spaudinio peržiūra;cmd-print-preview;
+įjunk spaudinio peržiūrą;cmd-print-preview;
+naršyklė;cmd-narsytuvas;
+naršytuvas;cmd-narsytuvas;
+paleisk naršyklę;cmd-narsytuvas;
+įjunk naršytuvą;cmd-narsytuvas;
+pereik į tolesnį elementą;cmd-goto-next-item;
+pereik į tolesnį lauką;cmd-goto-next-item;
+tolesnis elementas;cmd-goto-next-item;
+tolesnis laukas;cmd-goto-next-item;
+į tolesnį elementą;cmd-goto-next-item;
+į tolesnį lauką;cmd-goto-next-item;
+atgal;cmd-back-to-folder;
+eik atgal;cmd-back-to-folder;
+kopijuok;cmd-copy;
+parodyk tolesnį neskaitytą laišką;cmd-next-unread-email-message;
+tolesnis neskaitytas laiškas;cmd-next-unread-email-message;
+darbalaukis;cmd-show-desktop;
+parodyk darbalaukį;cmd-show-desktop;
+paleisk rašyklę;cmd-run-editor-app;
+parodyk savaitę;cmd-show-week-view;
+rodyk savaitę;cmd-show-week-view;
+mano įrenginiai;cmd-start-app-n;15
+parodyk mano įrenginius;cmd-start-app-n;15
+paleisk skaičiuoklę;cmd-run-spreadsheet-app;
+parodyk failų tvarkytuvę;cmd-show-explorer;
+parodyk pateikčių rengyklę;cmd-show-presentation-app;
+nauja paskyra;cmd-new-event;
+naujas įvykis;cmd-new-event;
+sukurk naują paskyrą;cmd-new-event;
+sukurk naują įvykį;cmd-new-event;
+asmeniniai aplankai;cmd-start-app-n;5
+parodyk mano aplankus;cmd-start-app-n;5
+parodyk mano asmeninius aplankus;cmd-start-app-n;5
+įjunk miego būseną;cmd-sleep-mode;
+įjunk miego režimą;cmd-sleep-mode;
+sumažink šriftą;cmd-shrink-font;
+užverk;cmd-close;
+užverk dokumentą;cmd-close;
+užverk langą;cmd-close;
+paleisk pašto programą;cmd-run-email-app;
+paleisk paštą;cmd-run-email-app;
+parodyk leistuvę;cmd-show-vlc-player;
+grąžink langus;cmd-restore-all-windows;
+sugrąžink langus;cmd-restore-all-windows;
+sumažink langą;cmd-restore-maximized-window;
+suskleisk langą;cmd-minimize-window;
+parodyk mėnesį;cmd-show-month-view;
+rodyk mėnesį;cmd-show-month-view;
+pridėk priedą;cmd-attach-file;
+tolesnis;cmd-next-item;
+personalizavimas;cmd-start-app-n;14

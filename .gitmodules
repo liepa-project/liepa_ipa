@@ -1,0 +1,3 @@
+[submodule "models/am"]
+	path = models/am
+	url = git@github.com:liepa-project/liepa_sphinx_naudojimas.git

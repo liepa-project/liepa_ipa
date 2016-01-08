@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script type="text/javascript">
+         var sock = null;
+         var ellog = null;
+         var path = "/browser?master=1";
+
+         window.onload = function() {
+
+            var wsuri;
+            ellog = document.getElementById('log');
+
+            if (window.location.protocol === "file:") {
+               wsuri = "ws://localhost:9000" + path;
+            } else {
+               wsuri = "ws://" + window.location.hostname + ":9000" + path;
+            }
+
+            if ("WebSocket" in window) {
+               sock = new WebSocket(wsuri);
+            } else if ("MozWebSocket" in window) {
+               sock = new MozWebSocket(wsuri);
+            } else {
+               log("Browser does not support WebSocket!");
+               window.location = "http://autobahn.ws/unsupportedbrowser";
+            }
+
+            if (sock) {
+               sock.onopen = function() {
+                  log("Connected to " + wsuri);
+               }
+
+               sock.onclose = function(e) {
+                  log("Connection closed (wasClean = " + e.wasClean + ", code = " + e.code + ", reason = '" + e.reason + "')");
+                  sock = null;
+               }
+
+               sock.onmessage = function(e) {
+                  log("Got echo: " + escHTML(e.data));
+               }
+            }
+         };
+
+         function send() {
+            var msg = document.getElementById('message').value;
+            if (sock) {
+               sock.send(msg);
+               log("Sent: " + msg);
+            } else {
+               log("Not connected.");
+            }
+         };
+
+         function log(m) {
+            ellog.innerHTML += m + '\n';
+            ellog.scrollTop = ellog.scrollHeight;
+         };
+
+         function escHTML(data) {
+             var tmp = document.createElement("div");
+             tmp.textContent = data;
+             return tmp.innerHTML;
+         };
+
+      </script>
+   </head>
+   <body>
+      <h1>„Naršytuvas“ WebSocket Demo</h1>
+      <noscript>You must enable JavaScript</noscript>
+      <form>
+         <p>Send Message: <input id="message" type="text" size="150" maxlength="200" value='{"start-recognizer": {}}'></p>
+      </form>
+      <button onclick='send();'>Send Message</button>
+      <pre id="log" style="height: 20em; overflow-y: scroll; background-color: #faa;"></pre>
+   </body>
+</html>
